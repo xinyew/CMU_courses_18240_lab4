@@ -1,0 +1,68 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "MagComp": [
+        "MagComp",
+        "vaLRj",
+        "module",
+        3
+    ],
+    "Adder": [
+        "Adder",
+        "xUt1z",
+        "module",
+        6
+    ],
+    "Multiplexer": [
+        "Multiplexer",
+        "UxyT3",
+        "module",
+        2
+    ],
+    "Decoder": [
+        "Decoder",
+        "t8TcA",
+        "module",
+        4
+    ],
+    "Synchronizer": [
+        "Synchronizer",
+        "mLbx7",
+        "module",
+        8
+    ],
+    "ShiftRegister_PIPO": [
+        "ShiftRegister_PIPO",
+        "yK5FF",
+        "module",
+        9
+    ],
+    "BarrelShiftRegister": [
+        "BarrelShiftRegister",
+        "ts568",
+        "module",
+        10
+    ],
+    "clock_divider": [
+        "clock_divider",
+        "gawcm",
+        "module",
+        11
+    ],
+    "testbench": [
+        "testbench",
+        "iAVhC",
+        "module",
+        14
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        12
+    ]
+}

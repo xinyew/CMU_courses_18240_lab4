@@ -1,0 +1,101 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Mar 21 21:48 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/inter.vpd' was opened successfully.
+                   0 SerialIn: 0 | Char:  
+                 170 SerialIn: 1 | Char:  
+                 190 SerialIn: 0 | Char:  
+                 210 SerialIn: 1 | Char:  
+                 230 SerialIn: 0 | Char:  
+                 250 SerialIn: 1 | Char:  
+                 270 SerialIn: 0 | Char:  
+                 330 SerialIn: 1 | Char:  
+                 390 SerialIn: 0 | Char:  
+                 430 SerialIn: 1 | Char:  
+                 450 SerialIn: 0 | Char:  
+                 550 SerialIn: 1 | Char:  
+                 570 SerialIn: 0 | Char:  
+                 590 SerialIn: 1 | Char:  
+                 630 SerialIn: 0 | Char:  
+                 670 SerialIn: 1 | Char:  
+                 790 SerialIn: 0 | Char:  
+                 910 SerialIn: 1 | Char:  
+                 930 SerialIn: 0 | Char:  
+                 950 SerialIn: 1 | Char:  
+                 990 SerialIn: 0 | Char:  
+                1030 SerialIn: 1 | Char:  
+                1070 SerialIn: 0 | Char:  
+                1110 SerialIn: 1 | Char:  
+                1190 SerialIn: 0 | Char:  
+                1290 SerialIn: 1 | Char:  
+                1310 SerialIn: 0 | Char:  
+                1330 SerialIn: 1 | Char:  
+                1370 SerialIn: 0 | Char:  
+                1430 SerialIn: 1 | Char:  
+                1450 SerialIn: 0 | Char:  
+                1470 SerialIn: 1 | Char:  
+                1510 SerialIn: 0 | Char:  
+                1550 SerialIn: 1 | Char:  
+                1590 SerialIn: 0 | Char:  
+                1650 SerialIn: 1 | Char:  
+                1670 SerialIn: 0 | Char:  
+                1690 SerialIn: 1 | Char:  
+                1770 SerialIn: 0 | Char:  
+                1790 SerialIn: 1 | Char:  
+                1810 SerialIn: 0 | Char:  
+                1830 SerialIn: 1 | Char:  
+                1850 SerialIn: 0 | Char:  
+                1870 SerialIn: 1 | Char:  
+                1890 SerialIn: 0 | Char:  
+                1910 SerialIn: 1 | Char:  
+                1930 SerialIn: 0 | Char:  
+                1970 SerialIn: 1 | Char:  
+                1990 SerialIn: 0 | Char:  
+                2010 SerialIn: 1 | Char:  
+                2050 SerialIn: 0 | Char:  
+                2090 SerialIn: 1 | Char:  
+                2110 SerialIn: 0 | Char:  
+                2150 SerialIn: 1 | Char:  
+                2190 SerialIn: 0 | Char:  
+                2210 SerialIn: 1 | Char:  
+                2230 SerialIn: 0 | Char:  
+                2370 SerialIn: 1 | Char:  
+                2390 SerialIn: 0 | Char:  
+                2410 SerialIn: 1 | Char:  
+                2450 SerialIn: 0 | Char:  
+                2490 SerialIn: 1 | Char:  
+                2530 SerialIn: 0 | Char:  
+                2570 SerialIn: 1 | Char:  
+                2650 SerialIn: 0 | Char:  
+                2770 SerialIn: 1 | Char:  
+                2790 SerialIn: 0 | Char:  
+                2810 SerialIn: 1 | Char:  
+                2850 SerialIn: 0 | Char:  
+                2910 SerialIn: 1 | Char:  
+                2930 SerialIn: 0 | Char:  
+                2950 SerialIn: 1 | Char:  
+                2990 SerialIn: 0 | Char:  
+                3030 SerialIn: 1 | Char:  
+                3050 SerialIn: 0 | Char:  
+                3110 SerialIn: 1 | Char:  
+                3130 SerialIn: 0 | Char:  
+                3150 SerialIn: 1 | Char:  
+$finish called from file "tb.sv", line 187.
+$finish at simulation time                 3191
+Simulation complete, time is 3191.
+*** FATAL: Simulation stopped due to a runtime error (such as null object access) in the HDL code.  Please see above in the log for more details, and/or recompile with '-check_all' to get more information printed to the log.
+The simulation cannot be continued. The current simulation state can be observed in DVE/UCLI.
+---------------------------------------------
+
+Simulation has just terminated due to a severe internal error:
+
+
+Release = 'T-2022.06_Full64'  Architecture = 'linux64'  Program = 'DVE'
+
+'35648016 35682754 33225057 43827979 33240352 43832504 43837960 43838204 33243191 33239546 33239730 33239756 33564132 33630718 33633486 33636265 33636428 31862646 28475052 28481588 26125590 26114249 26122106 26118780 28967233 30253103 45686285 45686551 46439567 28241171 46588476 46591048 46461734 28241322 45681012 45681128 45857546 45373453 45374329 36162865 35968329 45078021 45072692 45129951 20026410 45440041 45439914 20024982 19723954 15220935 140737292744021'
+
+---------------------------------------------
+===============================DVE Context================================
+Command line: /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 36041" -toolin /tmp/vcs_20230322014838_36040_xinyew..stdin -toolout /tmp/vcs_20230322014838_36040_xinyew..stdout
+==========================================================================

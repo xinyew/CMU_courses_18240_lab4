@@ -1,0 +1,1822 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Mar 21 22:29 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/inter.vpd' was opened successfully.
+                   0   SerialIn: 0 | Char:  
+                  10 idle idle SerialIn: 0 | Char:  
+                 170 idle running SerialIn: 1 | Char:  
+                 190 running running SerialIn: 0 | Char:  
+                 210 running running SerialIn: 1 | Char:  
+                 230 running running SerialIn: 0 | Char:  
+                 250 running running SerialIn: 1 | Char:  
+                 270 running running SerialIn: 0 | Char:  
+                 330 running running SerialIn: 1 | Char:  
+                 390 running running SerialIn: 0 | Char:  
+                 430 running completed SerialIn: 1 | Char:  
+                 450 completed idle SerialIn: 0 | Char:  
+                 470 idle idle SerialIn: 0 | Char: S
+                 550 idle running SerialIn: 1 | Char: S
+                 570 running running SerialIn: 0 | Char: S
+                 590 running running SerialIn: 1 | Char: S
+                 630 running running SerialIn: 0 | Char: S
+                 670 running running SerialIn: 1 | Char: S
+                 790 running running SerialIn: 0 | Char: S
+                 810 running completed SerialIn: 0 | Char: S
+                 830 completed idle SerialIn: 0 | Char: S
+                 850 idle idle SerialIn: 0 | Char: o
+                 910 idle running SerialIn: 1 | Char: o
+                 930 running running SerialIn: 0 | Char: o
+                 950 running running SerialIn: 1 | Char: o
+                 990 running running SerialIn: 0 | Char: o
+                1030 running running SerialIn: 1 | Char: o
+                1070 running running SerialIn: 0 | Char: o
+                1110 running running SerialIn: 1 | Char: o
+                1170 running completed SerialIn: 1 | Char: o
+                1190 completed idle SerialIn: 0 | Char: o
+                1210 idle idle SerialIn: 0 | Char: m
+                1290 idle running SerialIn: 1 | Char: m
+                1310 running running SerialIn: 0 | Char: m
+                1330 running running SerialIn: 1 | Char: m
+                1370 running running SerialIn: 0 | Char: m
+                1430 running running SerialIn: 1 | Char: m
+                1450 running running SerialIn: 0 | Char: m
+                1470 running running SerialIn: 1 | Char: m
+                1510 running running SerialIn: 0 | Char: m
+                1550 running completed SerialIn: 1 | Char: m
+                1570 completed error SerialIn: 1 | Char: m
+                1590 error idle SerialIn: 0 | Char: e
+                1610 idle idle SerialIn: 0 | Char: e
+                1650 idle running SerialIn: 1 | Char: e
+                1670 running running SerialIn: 0 | Char: e
+                1690 running running SerialIn: 1 | Char: e
+                1770 running running SerialIn: 0 | Char: e
+                1790 running running SerialIn: 1 | Char: e
+                1810 running running SerialIn: 0 | Char: e
+                1830 running running SerialIn: 1 | Char: e
+                1850 running running SerialIn: 0 | Char: e
+                1870 running running SerialIn: 1 | Char: e
+                1890 running running SerialIn: 0 | Char: e
+                1910 running completed SerialIn: 1 | Char: e
+                1930 completed idle SerialIn: 0 | Char: e
+                1950 idle idle SerialIn: 0 | Char: t
+                1970 idle running SerialIn: 1 | Char: t
+                1990 running running SerialIn: 0 | Char: t
+                2010 running running SerialIn: 1 | Char: t
+                2050 running running SerialIn: 0 | Char: t
+                2090 running running SerialIn: 1 | Char: t
+                2110 running running SerialIn: 0 | Char: t
+                2150 running running SerialIn: 1 | Char: t
+                2190 running running SerialIn: 0 | Char: t
+                2210 running running SerialIn: 1 | Char: t
+                2230 running completed SerialIn: 0 | Char: t
+                2250 completed idle SerialIn: 0 | Char: t
+                2270 idle idle SerialIn: 0 | Char: i
+                2370 idle running SerialIn: 1 | Char: i
+                2390 running running SerialIn: 0 | Char: i
+                2410 running running SerialIn: 1 | Char: i
+                2450 running running SerialIn: 0 | Char: i
+                2490 running running SerialIn: 1 | Char: i
+                2530 running running SerialIn: 0 | Char: i
+                2570 running running SerialIn: 1 | Char: i
+                2630 running completed SerialIn: 1 | Char: i
+                2650 completed idle SerialIn: 0 | Char: i
+                2670 idle idle SerialIn: 0 | Char: m
+                2770 idle running SerialIn: 1 | Char: m
+                2790 running running SerialIn: 0 | Char: m
+                2810 running running SerialIn: 1 | Char: m
+                2850 running running SerialIn: 0 | Char: m
+                2910 running running SerialIn: 1 | Char: m
+                2930 running running SerialIn: 0 | Char: m
+                2950 running running SerialIn: 1 | Char: m
+                2990 running running SerialIn: 0 | Char: m
+                3030 running completed SerialIn: 1 | Char: m
+                3050 completed idle SerialIn: 0 | Char: m
+                3070 idle idle SerialIn: 0 | Char: e
+                3110 idle running SerialIn: 1 | Char: e
+                3130 running running SerialIn: 0 | Char: e
+                3150 running running SerialIn: 1 | Char: e
+                3230 running running SerialIn: 0 | Char: e
+                3270 running running SerialIn: 1 | Char: e
+                3350 running running SerialIn: 0 | Char: e
+                3370 running completed SerialIn: 0 | Char: e
+                3390 completed idle SerialIn: 0 | Char: e
+                3410 idle idle SerialIn: 0 | Char: s
+                3530 idle running SerialIn: 1 | Char: s
+                3550 running running SerialIn: 0 | Char: s
+                3590 running running SerialIn: 1 | Char: s
+                3610 running running SerialIn: 0 | Char: s
+                3630 running running SerialIn: 1 | Char: s
+                3670 running running SerialIn: 0 | Char: s
+                3750 running running SerialIn: 1 | Char: s
+                3770 running running SerialIn: 0 | Char: s
+                3790 running completed SerialIn: 1 | Char: s
+                3810 completed idle SerialIn: 0 | Char: s
+                3830 idle idle SerialIn: 0 | Char:  
+                3930 idle running SerialIn: 1 | Char:  
+                3950 running running SerialIn: 0 | Char:  
+                3970 running running SerialIn: 1 | Char:  
+                3990 running running SerialIn: 0 | Char:  
+                4030 running running SerialIn: 1 | Char:  
+                4070 running running SerialIn: 0 | Char:  
+                4110 running running SerialIn: 1 | Char:  
+                4190 running completed SerialIn: 1 | Char:  
+                4210 completed idle SerialIn: 0 | Char:  
+                4230 idle idle SerialIn: 0 | Char: I
+                4310 idle running SerialIn: 1 | Char: I
+                4330 running running SerialIn: 0 | Char: I
+                4370 running running SerialIn: 1 | Char: I
+                4390 running running SerialIn: 0 | Char: I
+                4410 running running SerialIn: 1 | Char: I
+                4430 running running SerialIn: 0 | Char: I
+                4530 running running SerialIn: 1 | Char: I
+                4550 running running SerialIn: 0 | Char: I
+                4570 running completed SerialIn: 1 | Char: I
+                4590 completed idle SerialIn: 0 | Char: I
+                4610 idle idle SerialIn: 0 | Char:  
+                4670 idle running SerialIn: 1 | Char:  
+                4690 running running SerialIn: 0 | Char:  
+                4710 running running SerialIn: 1 | Char:  
+                4750 running running SerialIn: 0 | Char:  
+                4810 running running SerialIn: 1 | Char:  
+                4830 running running SerialIn: 0 | Char:  
+                4850 running running SerialIn: 1 | Char:  
+                4870 running running SerialIn: 0 | Char:  
+                4890 running running SerialIn: 1 | Char:  
+                4930 running completed SerialIn: 0 | Char:  
+                4950 completed idle SerialIn: 0 | Char:  
+                4970 idle idle SerialIn: 0 | Char: d
+                5150 idle running SerialIn: 1 | Char: d
+                5170 running running SerialIn: 0 | Char: d
+                5190 running running SerialIn: 1 | Char: d
+                5270 running running SerialIn: 0 | Char: d
+                5310 running running SerialIn: 1 | Char: d
+                5350 running running SerialIn: 0 | Char: d
+                5390 running running SerialIn: 1 | Char: d
+                5410 running completed SerialIn: 1 | Char: d
+                5430 completed idle SerialIn: 0 | Char: d
+                5450 idle idle SerialIn: 0 | Char: r
+                5490 idle running SerialIn: 1 | Char: r
+                5510 running running SerialIn: 0 | Char: r
+                5530 running running SerialIn: 1 | Char: r
+                5570 running running SerialIn: 0 | Char: r
+                5630 running running SerialIn: 1 | Char: r
+                5650 running running SerialIn: 0 | Char: r
+                5670 running running SerialIn: 1 | Char: r
+                5710 running running SerialIn: 0 | Char: r
+                5750 running completed SerialIn: 1 | Char: r
+                5770 completed idle SerialIn: 0 | Char: r
+                5790 idle idle SerialIn: 0 | Char: e
+                5850 idle running SerialIn: 1 | Char: e
+                5870 running running SerialIn: 0 | Char: e
+                5890 running running SerialIn: 1 | Char: e
+                5930 running running SerialIn: 0 | Char: e
+                6050 running running SerialIn: 1 | Char: e
+                6090 running running SerialIn: 0 | Char: e
+                6110 running completed SerialIn: 0 | Char: e
+                6130 completed idle SerialIn: 0 | Char: e
+                6150 idle idle SerialIn: 0 | Char: a
+                6290 idle running SerialIn: 1 | Char: a
+                6310 running running SerialIn: 0 | Char: a
+                6350 running running SerialIn: 1 | Char: a
+                6370 running running SerialIn: 0 | Char: a
+                6410 running running SerialIn: 1 | Char: a
+                6450 running running SerialIn: 0 | Char: a
+                6490 running running SerialIn: 1 | Char: a
+                6510 running running SerialIn: 0 | Char: a
+                6530 running running SerialIn: 1 | Char: a
+                6550 running completed SerialIn: 1 | Char: a
+                6570 completed idle SerialIn: 0 | Char: a
+                6590 idle idle SerialIn: 0 | Char: 
+                6750 idle running SerialIn: 1 | Char: 
+                6770 running running SerialIn: 0 | Char: 
+                6810 running running SerialIn: 1 | Char: 
+                6830 running running SerialIn: 0 | Char: 
+                6850 running running SerialIn: 1 | Char: 
+                6870 running running SerialIn: 0 | Char: 
+                6970 running running SerialIn: 1 | Char: 
+                6990 running running SerialIn: 0 | Char: 
+                7010 running completed SerialIn: 1 | Char: 
+                7030 completed idle SerialIn: 0 | Char: 
+                7050 idle idle SerialIn: 0 | Char:  
+                7230 idle running SerialIn: 1 | Char:  
+                7250 running running SerialIn: 0 | Char:  
+                7270 running running SerialIn: 1 | Char:  
+                7310 running running SerialIn: 0 | Char:  
+                7350 running running SerialIn: 1 | Char:  
+                7470 running running SerialIn: 0 | Char:  
+                7490 running completed SerialIn: 0 | Char:  
+                7510 completed idle SerialIn: 0 | Char:  
+                7530 idle idle SerialIn: 0 | Char: o
+                7550 idle running SerialIn: 1 | Char: o
+                7570 running running SerialIn: 0 | Char: o
+                7590 running running SerialIn: 1 | Char: o
+                7630 running running SerialIn: 0 | Char: o
+                7690 running running SerialIn: 1 | Char: o
+                7730 running running SerialIn: 0 | Char: o
+                7770 running running SerialIn: 1 | Char: o
+                7790 running running SerialIn: 0 | Char: o
+                7810 running completed SerialIn: 1 | Char: o
+                7830 completed idle SerialIn: 0 | Char: o
+                7850 idle idle SerialIn: 0 | Char: f
+                7970 idle running SerialIn: 1 | Char: f
+                7990 running running SerialIn: 0 | Char: f
+                8030 running running SerialIn: 1 | Char: f
+                8050 running running SerialIn: 0 | Char: f
+                8070 running running SerialIn: 1 | Char: f
+                8090 running running SerialIn: 0 | Char: f
+                8110 running running SerialIn: 1 | Char: f
+                8130 running running SerialIn: 0 | Char: f
+                8190 running running SerialIn: 1 | Char: f
+                8230 running completed SerialIn: 1 | Char: f
+                8250 completed idle SerialIn: 0 | Char: f
+                8270 idle idle SerialIn: 0 | Char: 
+                8410 idle running SerialIn: 1 | Char: 
+                8430 running running SerialIn: 0 | Char: 
+                8510 running running SerialIn: 1 | Char: 
+                8530 running running SerialIn: 0 | Char: 
+                8570 running running SerialIn: 1 | Char: 
+                8610 running running SerialIn: 0 | Char: 
+                8630 running running SerialIn: 1 | Char: 
+                8650 running running SerialIn: 0 | Char: 
+                8670 running completed SerialIn: 1 | Char: 
+                8690 completed idle SerialIn: 0 | Char: 
+                8710 idle idle SerialIn: 0 | Char: B
+                8790 idle running SerialIn: 1 | Char: B
+                8810 running running SerialIn: 0 | Char: B
+                8830 running running SerialIn: 1 | Char: B
+                8870 running running SerialIn: 0 | Char: B
+                8910 running running SerialIn: 1 | Char: B
+                8930 running running SerialIn: 0 | Char: B
+                8970 running running SerialIn: 1 | Char: B
+                9010 running running SerialIn: 0 | Char: B
+                9030 running running SerialIn: 1 | Char: B
+                9050 running completed SerialIn: 0 | Char: B
+                9070 completed idle SerialIn: 0 | Char: B
+                9090 idle idle SerialIn: 0 | Char: i
+                9270 idle running SerialIn: 1 | Char: i
+                9290 running running SerialIn: 0 | Char: i
+                9310 running running SerialIn: 1 | Char: i
+                9350 running running SerialIn: 0 | Char: i
+                9390 running running SerialIn: 1 | Char: i
+                9430 running running SerialIn: 0 | Char: i
+                9530 running completed SerialIn: 0 | Char: i
+                9550 completed idle SerialIn: 0 | Char: i
+                9570 idle idle SerialIn: 0 | Char: l
+                9690 idle running SerialIn: 1 | Char: l
+                9710 running running SerialIn: 0 | Char: l
+                9730 running running SerialIn: 1 | Char: l
+                9770 running running SerialIn: 0 | Char: l
+                9830 running running SerialIn: 1 | Char: l
+                9850 running running SerialIn: 0 | Char: l
+                9950 running completed SerialIn: 0 | Char: l
+                9970 completed idle SerialIn: 0 | Char: l
+                9990 idle idle SerialIn: 0 | Char: l
+               10030 idle running SerialIn: 1 | Char: l
+               10050 running running SerialIn: 0 | Char: l
+               10090 running running SerialIn: 1 | Char: l
+               10110 running running SerialIn: 0 | Char: l
+               10130 running running SerialIn: 1 | Char: l
+               10150 running running SerialIn: 0 | Char: l
+               10250 running running SerialIn: 1 | Char: l
+               10270 running running SerialIn: 0 | Char: l
+               10290 running completed SerialIn: 1 | Char: l
+               10310 completed idle SerialIn: 0 | Char: l
+               10330 idle idle SerialIn: 0 | Char:  
+               10470 idle running SerialIn: 1 | Char:  
+               10490 running running SerialIn: 0 | Char:  
+               10510 running running SerialIn: 1 | Char:  
+               10550 running running SerialIn: 0 | Char:  
+               10570 running running SerialIn: 1 | Char:  
+               10670 running running SerialIn: 0 | Char:  
+               10710 running running SerialIn: 1 | Char:  
+               10730 running completed SerialIn: 0 | Char:  
+               10750 completed idle SerialIn: 0 | Char:  
+               10770 idle idle SerialIn: 0 | Char: 
+               10890 idle running SerialIn: 1 | Char: 
+               10910 running running SerialIn: 0 | Char: 
+               10930 running running SerialIn: 1 | Char: 
+               10970 running running SerialIn: 0 | Char: 
+               11090 running running SerialIn: 1 | Char: 
+               11130 running running SerialIn: 0 | Char: 
+               11150 running completed SerialIn: 0 | Char: 
+               11170 completed idle SerialIn: 0 | Char: 
+               11190 idle idle SerialIn: 0 | Char: a
+               11330 idle running SerialIn: 1 | Char: a
+               11350 running running SerialIn: 0 | Char: a
+               11370 running running SerialIn: 1 | Char: a
+               11410 running running SerialIn: 0 | Char: a
+               11490 running running SerialIn: 1 | Char: a
+               11590 running completed SerialIn: 1 | Char: a
+               11610 completed idle SerialIn: 0 | Char: a
+               11630 idle idle SerialIn: 0 | Char: c
+               11810 idle running SerialIn: 1 | Char: c
+               11830 running running SerialIn: 0 | Char: c
+               11850 running running SerialIn: 1 | Char: c
+               11890 running running SerialIn: 0 | Char: c
+               11950 running running SerialIn: 1 | Char: c
+               11970 running running SerialIn: 0 | Char: c
+               11990 running running SerialIn: 1 | Char: c
+               12030 running running SerialIn: 0 | Char: c
+               12070 running completed SerialIn: 1 | Char: c
+               12090 completed idle SerialIn: 0 | Char: c
+               12110 idle idle SerialIn: 0 | Char: e
+               12230 idle running SerialIn: 1 | Char: e
+               12250 running running SerialIn: 0 | Char: e
+               12290 running running SerialIn: 1 | Char: e
+               12310 running running SerialIn: 0 | Char: e
+               12330 running running SerialIn: 1 | Char: e
+               12350 running running SerialIn: 0 | Char: e
+               12450 running running SerialIn: 1 | Char: e
+               12470 running running SerialIn: 0 | Char: e
+               12490 running completed SerialIn: 1 | Char: e
+               12510 completed idle SerialIn: 0 | Char: e
+               12530 idle idle SerialIn: 0 | Char:  
+               12550 idle running SerialIn: 1 | Char:  
+               12570 running running SerialIn: 0 | Char:  
+               12590 running running SerialIn: 1 | Char:  
+               12630 running running SerialIn: 0 | Char:  
+               12710 running running SerialIn: 1 | Char:  
+               12810 running completed SerialIn: 1 | Char:  
+               12830 completed idle SerialIn: 0 | Char:  
+               12850 idle idle SerialIn: 0 | Char: c
+               12990 idle running SerialIn: 1 | Char: c
+               13010 running running SerialIn: 0 | Char: c
+               13030 running running SerialIn: 1 | Char: c
+               13070 running running SerialIn: 0 | Char: c
+               13110 running running SerialIn: 1 | Char: c
+               13130 running running SerialIn: 0 | Char: c
+               13170 running running SerialIn: 1 | Char: c
+               13190 running running SerialIn: 0 | Char: c
+               13210 running running SerialIn: 1 | Char: c
+               13230 running running SerialIn: 0 | Char: c
+               13250 running completed SerialIn: 1 | Char: c
+               13270 completed idle SerialIn: 0 | Char: c
+               13290 idle idle SerialIn: 0 | Char: h
+               13370 idle running SerialIn: 1 | Char: h
+               13390 running running SerialIn: 0 | Char: h
+               13410 running running SerialIn: 1 | Char: h
+               13450 running running SerialIn: 0 | Char: h
+               13570 running running SerialIn: 1 | Char: h
+               13610 running running SerialIn: 0 | Char: h
+               13630 running completed SerialIn: 0 | Char: h
+               13650 completed idle SerialIn: 0 | Char: h
+               13670 idle idle SerialIn: 0 | Char: a
+               13710 idle running SerialIn: 1 | Char: a
+               13730 running running SerialIn: 0 | Char: a
+               13750 running running SerialIn: 1 | Char: a
+               13830 running running SerialIn: 0 | Char: a
+               13870 running running SerialIn: 1 | Char: a
+               13950 running running SerialIn: 0 | Char: a
+               13970 running completed SerialIn: 0 | Char: a
+               13990 completed idle SerialIn: 0 | Char: a
+               14010 idle idle SerialIn: 0 | Char: s
+               14130 idle running SerialIn: 1 | Char: s
+               14150 running running SerialIn: 0 | Char: s
+               14170 running running SerialIn: 1 | Char: s
+               14210 running running SerialIn: 0 | Char: s
+               14250 running running SerialIn: 1 | Char: s
+               14270 running running SerialIn: 0 | Char: s
+               14310 running running SerialIn: 1 | Char: s
+               14350 running running SerialIn: 0 | Char: s
+               14370 running running SerialIn: 1 | Char: s
+               14390 running completed SerialIn: 0 | Char: s
+               14410 completed idle SerialIn: 0 | Char: s
+               14430 idle idle SerialIn: 0 | Char: i
+               14550 idle running SerialIn: 1 | Char: i
+               14570 running running SerialIn: 0 | Char: i
+               14590 running running SerialIn: 1 | Char: i
+               14630 running running SerialIn: 0 | Char: i
+               14670 running running SerialIn: 1 | Char: i
+               14750 running running SerialIn: 0 | Char: i
+               14790 running running SerialIn: 1 | Char: i
+               14810 running completed SerialIn: 1 | Char: i
+               14830 completed idle SerialIn: 0 | Char: i
+               14850 idle idle SerialIn: 0 | Char: n
+               14930 idle running SerialIn: 1 | Char: n
+               14950 running running SerialIn: 0 | Char: n
+               14970 running running SerialIn: 1 | Char: n
+               15010 running running SerialIn: 0 | Char: n
+               15070 running running SerialIn: 1 | Char: n
+               15110 running running SerialIn: 0 | Char: n
+               15130 running running SerialIn: 1 | Char: n
+               15150 running running SerialIn: 0 | Char: n
+               15170 running running SerialIn: 1 | Char: n
+               15190 running completed SerialIn: 0 | Char: n
+               15210 completed idle SerialIn: 0 | Char: n
+               15230 idle idle SerialIn: 0 | Char: g
+               15430 idle running SerialIn: 1 | Char: g
+               15450 running running SerialIn: 0 | Char: g
+               15490 running running SerialIn: 1 | Char: g
+               15510 running running SerialIn: 0 | Char: g
+               15530 running running SerialIn: 1 | Char: g
+               15550 running running SerialIn: 0 | Char: g
+               15650 running running SerialIn: 1 | Char: g
+               15670 running running SerialIn: 0 | Char: g
+               15690 running completed SerialIn: 1 | Char: g
+               15710 completed idle SerialIn: 0 | Char: g
+               15730 idle idle SerialIn: 0 | Char:  
+               15750 idle running SerialIn: 1 | Char:  
+               15770 running running SerialIn: 0 | Char:  
+               15790 running running SerialIn: 1 | Char:  
+               15850 running running SerialIn: 0 | Char:  
+               15870 running running SerialIn: 1 | Char:  
+               15910 running running SerialIn: 0 | Char:  
+               15950 running running SerialIn: 1 | Char:  
+               16010 running completed SerialIn: 1 | Char:  
+               16030 completed idle SerialIn: 0 | Char:  
+               16050 idle idle SerialIn: 0 | Char: m
+               16110 idle running SerialIn: 1 | Char: m
+               16130 running running SerialIn: 0 | Char: m
+               16150 running running SerialIn: 1 | Char: m
+               16190 running running SerialIn: 0 | Char: m
+               16250 running running SerialIn: 1 | Char: m
+               16270 running running SerialIn: 0 | Char: m
+               16290 running running SerialIn: 1 | Char: m
+               16330 running running SerialIn: 0 | Char: m
+               16350 running running SerialIn: 1 | Char: m
+               16370 running completed SerialIn: 1 | Char: m
+               16390 completed idle SerialIn: 0 | Char: m
+               16410 idle idle SerialIn: 0 | Char: e
+               16430 idle running SerialIn: 1 | Char: e
+               16450 running running SerialIn: 0 | Char: e
+               16490 running running SerialIn: 1 | Char: e
+               16550 running running SerialIn: 0 | Char: e
+               16650 running running SerialIn: 1 | Char: e
+               16670 running running SerialIn: 0 | Char: e
+               16690 running completed SerialIn: 1 | Char: e
+               16710 completed idle SerialIn: 0 | Char: e
+               16730 idle idle SerialIn: 0 | Char:  
+               16870 idle running SerialIn: 1 | Char:  
+               16890 running running SerialIn: 0 | Char:  
+               16910 running running SerialIn: 1 | Char:  
+               16990 running running SerialIn: 0 | Char:  
+               17010 running running SerialIn: 1 | Char:  
+               17030 running running SerialIn: 0 | Char:  
+               17050 running running SerialIn: 1 | Char:  
+               17070 running running SerialIn: 0 | Char:  
+               17090 running running SerialIn: 1 | Char:  
+               17110 running running SerialIn: 0 | Char:  
+               17130 running completed SerialIn: 1 | Char:  
+               17150 completed idle SerialIn: 0 | Char:  
+               17170 idle idle SerialIn: 0 | Char: t
+               17270 idle running SerialIn: 1 | Char: t
+               17290 running running SerialIn: 0 | Char: t
+               17310 running running SerialIn: 1 | Char: t
+               17350 running running SerialIn: 0 | Char: t
+               17390 running running SerialIn: 1 | Char: t
+               17410 running running SerialIn: 0 | Char: t
+               17450 running running SerialIn: 1 | Char: t
+               17470 running running SerialIn: 0 | Char: t
+               17490 running running SerialIn: 1 | Char: t
+               17510 running running SerialIn: 0 | Char: t
+               17530 running completed SerialIn: 1 | Char: t
+               17550 completed idle SerialIn: 0 | Char: t
+               17570 idle idle SerialIn: 0 | Char: h
+               17650 idle running SerialIn: 1 | Char: h
+               17670 running running SerialIn: 0 | Char: h
+               17690 running running SerialIn: 1 | Char: h
+               17770 running running SerialIn: 0 | Char: h
+               17810 running running SerialIn: 1 | Char: h
+               17850 running running SerialIn: 0 | Char: h
+               17890 running running SerialIn: 1 | Char: h
+               17910 running completed SerialIn: 1 | Char: h
+               17930 completed idle SerialIn: 0 | Char: h
+               17950 idle idle SerialIn: 0 | Char: r
+               18090 idle running SerialIn: 1 | Char: r
+               18110 running running SerialIn: 0 | Char: r
+               18130 running running SerialIn: 1 | Char: r
+               18170 running running SerialIn: 0 | Char: r
+               18210 running running SerialIn: 1 | Char: r
+               18330 running running SerialIn: 0 | Char: r
+               18350 running completed SerialIn: 0 | Char: r
+               18370 completed idle SerialIn: 0 | Char: r
+               18390 idle idle SerialIn: 0 | Char: o
+               18530 idle running SerialIn: 1 | Char: o
+               18550 running running SerialIn: 0 | Char: o
+               18570 running running SerialIn: 1 | Char: o
+               18650 running running SerialIn: 0 | Char: o
+               18670 running running SerialIn: 1 | Char: o
+               18690 running running SerialIn: 0 | Char: o
+               18710 running running SerialIn: 1 | Char: o
+               18750 running running SerialIn: 0 | Char: o
+               18770 running running SerialIn: 1 | Char: o
+               18790 running completed SerialIn: 0 | Char: o
+               18810 completed idle SerialIn: 0 | Char: o
+               18830 idle idle SerialIn: 0 | Char: u
+               19030 idle running SerialIn: 1 | Char: u
+               19050 running running SerialIn: 0 | Char: u
+               19070 running running SerialIn: 1 | Char: u
+               19110 running running SerialIn: 0 | Char: u
+               19170 running running SerialIn: 1 | Char: u
+               19210 running running SerialIn: 0 | Char: u
+               19230 running running SerialIn: 1 | Char: u
+               19250 running running SerialIn: 0 | Char: u
+               19270 running running SerialIn: 1 | Char: u
+               19290 running completed SerialIn: 0 | Char: u
+               19310 completed idle SerialIn: 0 | Char: u
+               19330 idle idle SerialIn: 0 | Char: g
+               19490 idle running SerialIn: 1 | Char: g
+               19510 running running SerialIn: 0 | Char: g
+               19530 running running SerialIn: 1 | Char: g
+               19570 running running SerialIn: 0 | Char: g
+               19610 running running SerialIn: 1 | Char: g
+               19630 running running SerialIn: 0 | Char: g
+               19670 running running SerialIn: 1 | Char: g
+               19690 running running SerialIn: 0 | Char: g
+               19710 running running SerialIn: 1 | Char: g
+               19730 running running SerialIn: 0 | Char: g
+               19750 running completed SerialIn: 1 | Char: g
+               19770 completed idle SerialIn: 0 | Char: g
+               19790 idle idle SerialIn: 0 | Char: h
+               19910 idle running SerialIn: 1 | Char: h
+               19930 running running SerialIn: 0 | Char: h
+               19970 running running SerialIn: 1 | Char: h
+               19990 running running SerialIn: 0 | Char: h
+               20010 running running SerialIn: 1 | Char: h
+               20030 running running SerialIn: 0 | Char: h
+               20130 running running SerialIn: 1 | Char: h
+               20150 running running SerialIn: 0 | Char: h
+               20170 running completed SerialIn: 1 | Char: h
+               20190 completed idle SerialIn: 0 | Char: h
+               20210 idle idle SerialIn: 0 | Char:  
+               20310 idle running SerialIn: 1 | Char:  
+               20330 running running SerialIn: 0 | Char:  
+               20350 running running SerialIn: 1 | Char:  
+               20390 running running SerialIn: 0 | Char:  
+               20510 running running SerialIn: 1 | Char:  
+               20550 running running SerialIn: 0 | Char:  
+               20570 running completed SerialIn: 0 | Char:  
+               20590 completed idle SerialIn: 0 | Char:  
+               20610 idle idle SerialIn: 0 | Char: a
+               20710 idle running SerialIn: 1 | Char: a
+               20730 running running SerialIn: 0 | Char: a
+               20770 running running SerialIn: 1 | Char: a
+               20790 running running SerialIn: 0 | Char: a
+               20810 running running SerialIn: 1 | Char: a
+               20830 running running SerialIn: 0 | Char: a
+               20930 running running SerialIn: 1 | Char: a
+               20950 running running SerialIn: 0 | Char: a
+               20970 running completed SerialIn: 1 | Char: a
+               20990 completed idle SerialIn: 0 | Char: a
+               21010 idle idle SerialIn: 0 | Char:  
+               21190 idle running SerialIn: 1 | Char:  
+               21210 running running SerialIn: 0 | Char:  
+               21230 running running SerialIn: 1 | Char:  
+               21270 running running SerialIn: 0 | Char:  
+               21330 running running SerialIn: 1 | Char:  
+               21350 running running SerialIn: 0 | Char:  
+               21370 running running SerialIn: 1 | Char:  
+               21390 running running SerialIn: 0 | Char:  
+               21410 running running SerialIn: 1 | Char:  
+               21450 running completed SerialIn: 0 | Char:  
+               21470 completed idle SerialIn: 0 | Char:  
+               21490 idle idle SerialIn: 0 | Char: d
+               21690 idle running SerialIn: 1 | Char: d
+               21710 running running SerialIn: 0 | Char: d
+               21730 running running SerialIn: 1 | Char: d
+               21770 running running SerialIn: 0 | Char: d
+               21910 running running SerialIn: 1 | Char: d
+               21930 running running SerialIn: 0 | Char: d
+               21950 running completed SerialIn: 0 | Char: d
+               21970 completed idle SerialIn: 0 | Char: d
+               21990 idle idle SerialIn: 0 | Char: a
+               22110 idle running SerialIn: 1 | Char: a
+               22130 running running SerialIn: 0 | Char: a
+               22150 running running SerialIn: 1 | Char: a
+               22230 running running SerialIn: 0 | Char: a
+               22250 running running SerialIn: 1 | Char: a
+               22270 running running SerialIn: 0 | Char: a
+               22290 running running SerialIn: 1 | Char: a
+               22310 running running SerialIn: 0 | Char: a
+               22330 running running SerialIn: 1 | Char: a
+               22350 running running SerialIn: 0 | Char: a
+               22370 running completed SerialIn: 1 | Char: a
+               22390 completed idle SerialIn: 0 | Char: a
+               22410 idle idle SerialIn: 0 | Char: t
+               22590 idle running SerialIn: 1 | Char: t
+               22610 running running SerialIn: 0 | Char: t
+               22630 running running SerialIn: 1 | Char: t
+               22670 running running SerialIn: 0 | Char: t
+               22790 running running SerialIn: 1 | Char: t
+               22830 running running SerialIn: 0 | Char: t
+               22850 running completed SerialIn: 0 | Char: t
+               22870 completed idle SerialIn: 0 | Char: t
+               22890 idle idle SerialIn: 0 | Char: a
+               22990 idle running SerialIn: 1 | Char: a
+               23010 running running SerialIn: 0 | Char: a
+               23030 running running SerialIn: 1 | Char: a
+               23110 running running SerialIn: 0 | Char: a
+               23250 running completed SerialIn: 0 | Char: a
+               23270 completed idle SerialIn: 0 | Char: a
+               23290 idle idle SerialIn: 0 | Char: p
+               23490 idle running SerialIn: 1 | Char: p
+               23510 running running SerialIn: 0 | Char: p
+               23530 running running SerialIn: 1 | Char: p
+               23570 running running SerialIn: 0 | Char: p
+               23690 running running SerialIn: 1 | Char: p
+               23730 running running SerialIn: 0 | Char: p
+               23750 running completed SerialIn: 0 | Char: p
+               23770 completed idle SerialIn: 0 | Char: p
+               23790 idle idle SerialIn: 0 | Char: a
+               23990 idle running SerialIn: 1 | Char: a
+               24010 running running SerialIn: 0 | Char: a
+               24030 running running SerialIn: 1 | Char: a
+               24110 running running SerialIn: 0 | Char: a
+               24130 running running SerialIn: 1 | Char: a
+               24150 running running SerialIn: 0 | Char: a
+               24170 running running SerialIn: 1 | Char: a
+               24190 running running SerialIn: 0 | Char: a
+               24210 running running SerialIn: 1 | Char: a
+               24230 running running SerialIn: 0 | Char: a
+               24250 running completed SerialIn: 1 | Char: a
+               24270 completed idle SerialIn: 0 | Char: a
+               24290 idle idle SerialIn: 0 | Char: t
+               24410 idle running SerialIn: 1 | Char: t
+               24430 running running SerialIn: 0 | Char: t
+               24450 running running SerialIn: 1 | Char: t
+               24490 running running SerialIn: 0 | Char: t
+               24530 running running SerialIn: 1 | Char: t
+               24550 running running SerialIn: 0 | Char: t
+               24590 running running SerialIn: 1 | Char: t
+               24610 running running SerialIn: 0 | Char: t
+               24630 running running SerialIn: 1 | Char: t
+               24650 running running SerialIn: 0 | Char: t
+               24670 running completed SerialIn: 1 | Char: t
+               24690 completed idle SerialIn: 0 | Char: t
+               24710 idle idle SerialIn: 0 | Char: h
+               24930 idle error SerialIn: 0 | Char: h
+               24950 error idle SerialIn: 0 | Char: h
+               24970 idle idle SerialIn: 0 | Char: h
+               25190 idle error SerialIn: 0 | Char: h
+               25210 error idle SerialIn: 0 | Char: h
+               25230 idle idle SerialIn: 0 | Char: h
+               25450 idle error SerialIn: 0 | Char: h
+               25470 error idle SerialIn: 0 | Char: h
+               25490 idle idle SerialIn: 0 | Char: h
+               25710 idle error SerialIn: 0 | Char: h
+               25730 error idle SerialIn: 0 | Char: h
+               25750 idle idle SerialIn: 0 | Char: h
+               25970 idle error SerialIn: 0 | Char: h
+               25990 error idle SerialIn: 0 | Char: h
+               26010 idle idle SerialIn: 0 | Char: h
+               26230 idle error SerialIn: 0 | Char: h
+               26250 error idle SerialIn: 0 | Char: h
+               26270 idle idle SerialIn: 0 | Char: h
+               26490 idle error SerialIn: 0 | Char: h
+               26510 error idle SerialIn: 0 | Char: h
+               26530 idle idle SerialIn: 0 | Char: h
+               26750 idle error SerialIn: 0 | Char: h
+               26770 error idle SerialIn: 0 | Char: h
+               26790 idle idle SerialIn: 0 | Char: h
+               27010 idle error SerialIn: 0 | Char: h
+               27030 error idle SerialIn: 0 | Char: h
+               27050 idle idle SerialIn: 0 | Char: h
+               27270 idle error SerialIn: 0 | Char: h
+               27290 error idle SerialIn: 0 | Char: h
+               27310 idle idle SerialIn: 0 | Char: h
+               27530 idle error SerialIn: 0 | Char: h
+               27550 error idle SerialIn: 0 | Char: h
+               27570 idle idle SerialIn: 0 | Char: h
+               27790 idle error SerialIn: 0 | Char: h
+               27810 error idle SerialIn: 0 | Char: h
+               27830 idle idle SerialIn: 0 | Char: h
+               28050 idle error SerialIn: 0 | Char: h
+               28070 error idle SerialIn: 0 | Char: h
+               28090 idle idle SerialIn: 0 | Char: h
+               28310 idle error SerialIn: 0 | Char: h
+               28330 error idle SerialIn: 0 | Char: h
+               28350 idle idle SerialIn: 0 | Char: h
+               28570 idle error SerialIn: 0 | Char: h
+               28590 error idle SerialIn: 0 | Char: h
+               28610 idle idle SerialIn: 0 | Char: h
+               28830 idle error SerialIn: 0 | Char: h
+               28850 error idle SerialIn: 0 | Char: h
+               28870 idle idle SerialIn: 0 | Char: h
+               29090 idle error SerialIn: 0 | Char: h
+               29110 error idle SerialIn: 0 | Char: h
+               29130 idle idle SerialIn: 0 | Char: h
+               29350 idle error SerialIn: 0 | Char: h
+               29370 error idle SerialIn: 0 | Char: h
+               29390 idle idle SerialIn: 0 | Char: h
+               29610 idle error SerialIn: 0 | Char: h
+               29630 error idle SerialIn: 0 | Char: h
+               29650 idle idle SerialIn: 0 | Char: h
+               29870 idle error SerialIn: 0 | Char: h
+               29890 error idle SerialIn: 0 | Char: h
+               29910 idle idle SerialIn: 0 | Char: h
+               30130 idle error SerialIn: 0 | Char: h
+               30150 error idle SerialIn: 0 | Char: h
+               30170 idle idle SerialIn: 0 | Char: h
+               30390 idle error SerialIn: 0 | Char: h
+               30410 error idle SerialIn: 0 | Char: h
+               30430 idle idle SerialIn: 0 | Char: h
+               30650 idle error SerialIn: 0 | Char: h
+               30670 error idle SerialIn: 0 | Char: h
+               30690 idle idle SerialIn: 0 | Char: h
+               30910 idle error SerialIn: 0 | Char: h
+               30930 error idle SerialIn: 0 | Char: h
+               30950 idle idle SerialIn: 0 | Char: h
+               31170 idle error SerialIn: 0 | Char: h
+               31190 error idle SerialIn: 0 | Char: h
+               31210 idle idle SerialIn: 0 | Char: h
+               31430 idle error SerialIn: 0 | Char: h
+               31450 error idle SerialIn: 0 | Char: h
+               31470 idle idle SerialIn: 0 | Char: h
+               31690 idle error SerialIn: 0 | Char: h
+               31710 error idle SerialIn: 0 | Char: h
+               31730 idle idle SerialIn: 0 | Char: h
+               31950 idle error SerialIn: 0 | Char: h
+               31970 error idle SerialIn: 0 | Char: h
+               31990 idle idle SerialIn: 0 | Char: h
+               32210 idle error SerialIn: 0 | Char: h
+               32230 error idle SerialIn: 0 | Char: h
+               32250 idle idle SerialIn: 0 | Char: h
+               32470 idle error SerialIn: 0 | Char: h
+               32490 error idle SerialIn: 0 | Char: h
+               32510 idle idle SerialIn: 0 | Char: h
+               32730 idle error SerialIn: 0 | Char: h
+               32750 error idle SerialIn: 0 | Char: h
+               32770 idle idle SerialIn: 0 | Char: h
+               32990 idle error SerialIn: 0 | Char: h
+               33010 error idle SerialIn: 0 | Char: h
+               33030 idle idle SerialIn: 0 | Char: h
+               33250 idle error SerialIn: 0 | Char: h
+               33270 error idle SerialIn: 0 | Char: h
+               33290 idle idle SerialIn: 0 | Char: h
+               33510 idle error SerialIn: 0 | Char: h
+               33530 error idle SerialIn: 0 | Char: h
+               33550 idle idle SerialIn: 0 | Char: h
+               33770 idle error SerialIn: 0 | Char: h
+               33790 error idle SerialIn: 0 | Char: h
+               33810 idle idle SerialIn: 0 | Char: h
+               34030 idle error SerialIn: 0 | Char: h
+               34050 error idle SerialIn: 0 | Char: h
+               34070 idle idle SerialIn: 0 | Char: h
+               34290 idle error SerialIn: 0 | Char: h
+               34310 error idle SerialIn: 0 | Char: h
+               34330 idle idle SerialIn: 0 | Char: h
+               34550 idle error SerialIn: 0 | Char: h
+               34570 error idle SerialIn: 0 | Char: h
+               34590 idle idle SerialIn: 0 | Char: h
+               34810 idle error SerialIn: 0 | Char: h
+               34830 error idle SerialIn: 0 | Char: h
+               34850 idle idle SerialIn: 0 | Char: h
+               35070 idle error SerialIn: 0 | Char: h
+               35090 error idle SerialIn: 0 | Char: h
+               35110 idle idle SerialIn: 0 | Char: h
+               35330 idle error SerialIn: 0 | Char: h
+               35350 error idle SerialIn: 0 | Char: h
+               35370 idle idle SerialIn: 0 | Char: h
+               35590 idle error SerialIn: 0 | Char: h
+               35610 error idle SerialIn: 0 | Char: h
+               35630 idle idle SerialIn: 0 | Char: h
+               35850 idle error SerialIn: 0 | Char: h
+               35870 error idle SerialIn: 0 | Char: h
+               35890 idle idle SerialIn: 0 | Char: h
+               36110 idle error SerialIn: 0 | Char: h
+               36130 error idle SerialIn: 0 | Char: h
+               36150 idle idle SerialIn: 0 | Char: h
+               36370 idle error SerialIn: 0 | Char: h
+               36390 error idle SerialIn: 0 | Char: h
+               36410 idle idle SerialIn: 0 | Char: h
+               36630 idle error SerialIn: 0 | Char: h
+               36650 error idle SerialIn: 0 | Char: h
+               36670 idle idle SerialIn: 0 | Char: h
+               36890 idle error SerialIn: 0 | Char: h
+               36910 error idle SerialIn: 0 | Char: h
+               36930 idle idle SerialIn: 0 | Char: h
+               37150 idle error SerialIn: 0 | Char: h
+               37170 error idle SerialIn: 0 | Char: h
+               37190 idle idle SerialIn: 0 | Char: h
+               37410 idle error SerialIn: 0 | Char: h
+               37430 error idle SerialIn: 0 | Char: h
+               37450 idle idle SerialIn: 0 | Char: h
+               37670 idle error SerialIn: 0 | Char: h
+               37690 error idle SerialIn: 0 | Char: h
+               37710 idle idle SerialIn: 0 | Char: h
+               37930 idle error SerialIn: 0 | Char: h
+               37950 error idle SerialIn: 0 | Char: h
+               37970 idle idle SerialIn: 0 | Char: h
+               38190 idle error SerialIn: 0 | Char: h
+               38210 error idle SerialIn: 0 | Char: h
+               38230 idle idle SerialIn: 0 | Char: h
+               38450 idle error SerialIn: 0 | Char: h
+               38470 error idle SerialIn: 0 | Char: h
+               38490 idle idle SerialIn: 0 | Char: h
+               38710 idle error SerialIn: 0 | Char: h
+               38730 error idle SerialIn: 0 | Char: h
+               38750 idle idle SerialIn: 0 | Char: h
+               38970 idle error SerialIn: 0 | Char: h
+               38990 error idle SerialIn: 0 | Char: h
+               39010 idle idle SerialIn: 0 | Char: h
+               39230 idle error SerialIn: 0 | Char: h
+               39250 error idle SerialIn: 0 | Char: h
+               39270 idle idle SerialIn: 0 | Char: h
+               39490 idle error SerialIn: 0 | Char: h
+               39510 error idle SerialIn: 0 | Char: h
+               39530 idle idle SerialIn: 0 | Char: h
+               39750 idle error SerialIn: 0 | Char: h
+               39770 error idle SerialIn: 0 | Char: h
+               39790 idle idle SerialIn: 0 | Char: h
+               40010 idle error SerialIn: 0 | Char: h
+               40030 error idle SerialIn: 0 | Char: h
+               40050 idle idle SerialIn: 0 | Char: h
+               40270 idle error SerialIn: 0 | Char: h
+               40290 error idle SerialIn: 0 | Char: h
+               40310 idle idle SerialIn: 0 | Char: h
+               40530 idle error SerialIn: 0 | Char: h
+               40550 error idle SerialIn: 0 | Char: h
+               40570 idle idle SerialIn: 0 | Char: h
+               40790 idle error SerialIn: 0 | Char: h
+               40810 error idle SerialIn: 0 | Char: h
+               40830 idle idle SerialIn: 0 | Char: h
+               41050 idle error SerialIn: 0 | Char: h
+               41070 error idle SerialIn: 0 | Char: h
+               41090 idle idle SerialIn: 0 | Char: h
+               41310 idle error SerialIn: 0 | Char: h
+               41330 error idle SerialIn: 0 | Char: h
+               41350 idle idle SerialIn: 0 | Char: h
+               41570 idle error SerialIn: 0 | Char: h
+               41590 error idle SerialIn: 0 | Char: h
+               41610 idle idle SerialIn: 0 | Char: h
+               41830 idle error SerialIn: 0 | Char: h
+               41850 error idle SerialIn: 0 | Char: h
+               41870 idle idle SerialIn: 0 | Char: h
+               42090 idle error SerialIn: 0 | Char: h
+               42110 error idle SerialIn: 0 | Char: h
+               42130 idle idle SerialIn: 0 | Char: h
+               42350 idle error SerialIn: 0 | Char: h
+               42370 error idle SerialIn: 0 | Char: h
+               42390 idle idle SerialIn: 0 | Char: h
+               42610 idle error SerialIn: 0 | Char: h
+               42630 error idle SerialIn: 0 | Char: h
+               42650 idle idle SerialIn: 0 | Char: h
+               42870 idle error SerialIn: 0 | Char: h
+               42890 error idle SerialIn: 0 | Char: h
+               42910 idle idle SerialIn: 0 | Char: h
+               43130 idle error SerialIn: 0 | Char: h
+               43150 error idle SerialIn: 0 | Char: h
+               43170 idle idle SerialIn: 0 | Char: h
+               43390 idle error SerialIn: 0 | Char: h
+               43410 error idle SerialIn: 0 | Char: h
+               43430 idle idle SerialIn: 0 | Char: h
+               43650 idle error SerialIn: 0 | Char: h
+               43670 error idle SerialIn: 0 | Char: h
+               43690 idle idle SerialIn: 0 | Char: h
+               43910 idle error SerialIn: 0 | Char: h
+               43930 error idle SerialIn: 0 | Char: h
+               43950 idle idle SerialIn: 0 | Char: h
+               44170 idle error SerialIn: 0 | Char: h
+               44190 error idle SerialIn: 0 | Char: h
+               44210 idle idle SerialIn: 0 | Char: h
+               44430 idle error SerialIn: 0 | Char: h
+               44450 error idle SerialIn: 0 | Char: h
+               44470 idle idle SerialIn: 0 | Char: h
+               44690 idle error SerialIn: 0 | Char: h
+               44710 error idle SerialIn: 0 | Char: h
+               44730 idle idle SerialIn: 0 | Char: h
+               44950 idle error SerialIn: 0 | Char: h
+               44970 error idle SerialIn: 0 | Char: h
+               44990 idle idle SerialIn: 0 | Char: h
+               45210 idle error SerialIn: 0 | Char: h
+               45230 error idle SerialIn: 0 | Char: h
+               45250 idle idle SerialIn: 0 | Char: h
+               45470 idle error SerialIn: 0 | Char: h
+               45490 error idle SerialIn: 0 | Char: h
+               45510 idle idle SerialIn: 0 | Char: h
+               45730 idle error SerialIn: 0 | Char: h
+               45750 error idle SerialIn: 0 | Char: h
+               45770 idle idle SerialIn: 0 | Char: h
+               45990 idle error SerialIn: 0 | Char: h
+               46010 error idle SerialIn: 0 | Char: h
+               46030 idle idle SerialIn: 0 | Char: h
+               46250 idle error SerialIn: 0 | Char: h
+               46270 error idle SerialIn: 0 | Char: h
+               46290 idle idle SerialIn: 0 | Char: h
+               46510 idle error SerialIn: 0 | Char: h
+               46530 error idle SerialIn: 0 | Char: h
+               46550 idle idle SerialIn: 0 | Char: h
+               46770 idle error SerialIn: 0 | Char: h
+               46790 error idle SerialIn: 0 | Char: h
+               46810 idle idle SerialIn: 0 | Char: h
+               47030 idle error SerialIn: 0 | Char: h
+               47050 error idle SerialIn: 0 | Char: h
+               47070 idle idle SerialIn: 0 | Char: h
+               47290 idle error SerialIn: 0 | Char: h
+               47310 error idle SerialIn: 0 | Char: h
+               47330 idle idle SerialIn: 0 | Char: h
+               47550 idle error SerialIn: 0 | Char: h
+               47570 error idle SerialIn: 0 | Char: h
+               47590 idle idle SerialIn: 0 | Char: h
+               47810 idle error SerialIn: 0 | Char: h
+               47830 error idle SerialIn: 0 | Char: h
+               47850 idle idle SerialIn: 0 | Char: h
+               48070 idle error SerialIn: 0 | Char: h
+               48090 error idle SerialIn: 0 | Char: h
+               48110 idle idle SerialIn: 0 | Char: h
+               48330 idle error SerialIn: 0 | Char: h
+               48350 error idle SerialIn: 0 | Char: h
+               48370 idle idle SerialIn: 0 | Char: h
+               48590 idle error SerialIn: 0 | Char: h
+               48610 error idle SerialIn: 0 | Char: h
+               48630 idle idle SerialIn: 0 | Char: h
+               48850 idle error SerialIn: 0 | Char: h
+               48870 error idle SerialIn: 0 | Char: h
+               48890 idle idle SerialIn: 0 | Char: h
+               49110 idle error SerialIn: 0 | Char: h
+               49130 error idle SerialIn: 0 | Char: h
+               49150 idle idle SerialIn: 0 | Char: h
+               49370 idle error SerialIn: 0 | Char: h
+               49390 error idle SerialIn: 0 | Char: h
+               49410 idle idle SerialIn: 0 | Char: h
+               49630 idle error SerialIn: 0 | Char: h
+               49650 error idle SerialIn: 0 | Char: h
+               49670 idle idle SerialIn: 0 | Char: h
+               49890 idle error SerialIn: 0 | Char: h
+               49910 error idle SerialIn: 0 | Char: h
+               49930 idle idle SerialIn: 0 | Char: h
+               50150 idle error SerialIn: 0 | Char: h
+               50170 error idle SerialIn: 0 | Char: h
+               50190 idle idle SerialIn: 0 | Char: h
+               50410 idle error SerialIn: 0 | Char: h
+               50430 error idle SerialIn: 0 | Char: h
+               50450 idle idle SerialIn: 0 | Char: h
+               50670 idle error SerialIn: 0 | Char: h
+               50690 error idle SerialIn: 0 | Char: h
+               50710 idle idle SerialIn: 0 | Char: h
+               50930 idle error SerialIn: 0 | Char: h
+               50950 error idle SerialIn: 0 | Char: h
+               50970 idle idle SerialIn: 0 | Char: h
+               51190 idle error SerialIn: 0 | Char: h
+               51210 error idle SerialIn: 0 | Char: h
+               51230 idle idle SerialIn: 0 | Char: h
+               51450 idle error SerialIn: 0 | Char: h
+               51470 error idle SerialIn: 0 | Char: h
+               51490 idle idle SerialIn: 0 | Char: h
+               51710 idle error SerialIn: 0 | Char: h
+               51730 error idle SerialIn: 0 | Char: h
+               51750 idle idle SerialIn: 0 | Char: h
+               51970 idle error SerialIn: 0 | Char: h
+               51990 error idle SerialIn: 0 | Char: h
+               52010 idle idle SerialIn: 0 | Char: h
+               52230 idle error SerialIn: 0 | Char: h
+               52250 error idle SerialIn: 0 | Char: h
+               52270 idle idle SerialIn: 0 | Char: h
+               52490 idle error SerialIn: 0 | Char: h
+               52510 error idle SerialIn: 0 | Char: h
+               52530 idle idle SerialIn: 0 | Char: h
+               52750 idle error SerialIn: 0 | Char: h
+               52770 error idle SerialIn: 0 | Char: h
+               52790 idle idle SerialIn: 0 | Char: h
+               53010 idle error SerialIn: 0 | Char: h
+               53030 error idle SerialIn: 0 | Char: h
+               53050 idle idle SerialIn: 0 | Char: h
+               53270 idle error SerialIn: 0 | Char: h
+               53290 error idle SerialIn: 0 | Char: h
+               53310 idle idle SerialIn: 0 | Char: h
+               53530 idle error SerialIn: 0 | Char: h
+               53550 error idle SerialIn: 0 | Char: h
+               53570 idle idle SerialIn: 0 | Char: h
+               53790 idle error SerialIn: 0 | Char: h
+               53810 error idle SerialIn: 0 | Char: h
+               53830 idle idle SerialIn: 0 | Char: h
+               54050 idle error SerialIn: 0 | Char: h
+               54070 error idle SerialIn: 0 | Char: h
+               54090 idle idle SerialIn: 0 | Char: h
+               54310 idle error SerialIn: 0 | Char: h
+               54330 error idle SerialIn: 0 | Char: h
+               54350 idle idle SerialIn: 0 | Char: h
+               54570 idle error SerialIn: 0 | Char: h
+               54590 error idle SerialIn: 0 | Char: h
+               54610 idle idle SerialIn: 0 | Char: h
+               54830 idle error SerialIn: 0 | Char: h
+               54850 error idle SerialIn: 0 | Char: h
+               54870 idle idle SerialIn: 0 | Char: h
+               55090 idle error SerialIn: 0 | Char: h
+               55110 error idle SerialIn: 0 | Char: h
+               55130 idle idle SerialIn: 0 | Char: h
+               55350 idle error SerialIn: 0 | Char: h
+               55370 error idle SerialIn: 0 | Char: h
+               55390 idle idle SerialIn: 0 | Char: h
+               55610 idle error SerialIn: 0 | Char: h
+               55630 error idle SerialIn: 0 | Char: h
+               55650 idle idle SerialIn: 0 | Char: h
+               55870 idle error SerialIn: 0 | Char: h
+               55890 error idle SerialIn: 0 | Char: h
+               55910 idle idle SerialIn: 0 | Char: h
+               56130 idle error SerialIn: 0 | Char: h
+               56150 error idle SerialIn: 0 | Char: h
+               56170 idle idle SerialIn: 0 | Char: h
+               56390 idle error SerialIn: 0 | Char: h
+               56410 error idle SerialIn: 0 | Char: h
+               56430 idle idle SerialIn: 0 | Char: h
+               56650 idle error SerialIn: 0 | Char: h
+               56670 error idle SerialIn: 0 | Char: h
+               56690 idle idle SerialIn: 0 | Char: h
+               56910 idle error SerialIn: 0 | Char: h
+               56930 error idle SerialIn: 0 | Char: h
+               56950 idle idle SerialIn: 0 | Char: h
+               57170 idle error SerialIn: 0 | Char: h
+               57190 error idle SerialIn: 0 | Char: h
+               57210 idle idle SerialIn: 0 | Char: h
+               57430 idle error SerialIn: 0 | Char: h
+               57450 error idle SerialIn: 0 | Char: h
+               57470 idle idle SerialIn: 0 | Char: h
+               57690 idle error SerialIn: 0 | Char: h
+               57710 error idle SerialIn: 0 | Char: h
+               57730 idle idle SerialIn: 0 | Char: h
+               57950 idle error SerialIn: 0 | Char: h
+               57970 error idle SerialIn: 0 | Char: h
+               57990 idle idle SerialIn: 0 | Char: h
+               58210 idle error SerialIn: 0 | Char: h
+               58230 error idle SerialIn: 0 | Char: h
+               58250 idle idle SerialIn: 0 | Char: h
+               58470 idle error SerialIn: 0 | Char: h
+               58490 error idle SerialIn: 0 | Char: h
+               58510 idle idle SerialIn: 0 | Char: h
+               58730 idle error SerialIn: 0 | Char: h
+               58750 error idle SerialIn: 0 | Char: h
+               58770 idle idle SerialIn: 0 | Char: h
+               58990 idle error SerialIn: 0 | Char: h
+               59010 error idle SerialIn: 0 | Char: h
+               59030 idle idle SerialIn: 0 | Char: h
+               59250 idle error SerialIn: 0 | Char: h
+               59270 error idle SerialIn: 0 | Char: h
+               59290 idle idle SerialIn: 0 | Char: h
+               59510 idle error SerialIn: 0 | Char: h
+               59530 error idle SerialIn: 0 | Char: h
+               59550 idle idle SerialIn: 0 | Char: h
+               59770 idle error SerialIn: 0 | Char: h
+               59790 error idle SerialIn: 0 | Char: h
+               59810 idle idle SerialIn: 0 | Char: h
+               60030 idle error SerialIn: 0 | Char: h
+               60050 error idle SerialIn: 0 | Char: h
+               60070 idle idle SerialIn: 0 | Char: h
+               60290 idle error SerialIn: 0 | Char: h
+               60310 error idle SerialIn: 0 | Char: h
+               60330 idle idle SerialIn: 0 | Char: h
+               60550 idle error SerialIn: 0 | Char: h
+               60570 error idle SerialIn: 0 | Char: h
+               60590 idle idle SerialIn: 0 | Char: h
+               60810 idle error SerialIn: 0 | Char: h
+               60830 error idle SerialIn: 0 | Char: h
+               60850 idle idle SerialIn: 0 | Char: h
+               61070 idle error SerialIn: 0 | Char: h
+               61090 error idle SerialIn: 0 | Char: h
+               61110 idle idle SerialIn: 0 | Char: h
+               61330 idle error SerialIn: 0 | Char: h
+               61350 error idle SerialIn: 0 | Char: h
+               61370 idle idle SerialIn: 0 | Char: h
+               61590 idle error SerialIn: 0 | Char: h
+               61610 error idle SerialIn: 0 | Char: h
+               61630 idle idle SerialIn: 0 | Char: h
+               61850 idle error SerialIn: 0 | Char: h
+               61870 error idle SerialIn: 0 | Char: h
+               61890 idle idle SerialIn: 0 | Char: h
+               62110 idle error SerialIn: 0 | Char: h
+               62130 error idle SerialIn: 0 | Char: h
+               62150 idle idle SerialIn: 0 | Char: h
+               62370 idle error SerialIn: 0 | Char: h
+               62390 error idle SerialIn: 0 | Char: h
+               62410 idle idle SerialIn: 0 | Char: h
+               62630 idle error SerialIn: 0 | Char: h
+               62650 error idle SerialIn: 0 | Char: h
+               62670 idle idle SerialIn: 0 | Char: h
+               62890 idle error SerialIn: 0 | Char: h
+               62910 error idle SerialIn: 0 | Char: h
+               62930 idle idle SerialIn: 0 | Char: h
+               63150 idle error SerialIn: 0 | Char: h
+               63170 error idle SerialIn: 0 | Char: h
+               63190 idle idle SerialIn: 0 | Char: h
+               63410 idle error SerialIn: 0 | Char: h
+               63430 error idle SerialIn: 0 | Char: h
+               63450 idle idle SerialIn: 0 | Char: h
+               63670 idle error SerialIn: 0 | Char: h
+               63690 error idle SerialIn: 0 | Char: h
+               63710 idle idle SerialIn: 0 | Char: h
+               63930 idle error SerialIn: 0 | Char: h
+               63950 error idle SerialIn: 0 | Char: h
+               63970 idle idle SerialIn: 0 | Char: h
+               64190 idle error SerialIn: 0 | Char: h
+               64210 error idle SerialIn: 0 | Char: h
+               64230 idle idle SerialIn: 0 | Char: h
+               64450 idle error SerialIn: 0 | Char: h
+               64470 error idle SerialIn: 0 | Char: h
+               64490 idle idle SerialIn: 0 | Char: h
+               64710 idle error SerialIn: 0 | Char: h
+               64730 error idle SerialIn: 0 | Char: h
+               64750 idle idle SerialIn: 0 | Char: h
+               64970 idle error SerialIn: 0 | Char: h
+               64990 error idle SerialIn: 0 | Char: h
+               65010 idle idle SerialIn: 0 | Char: h
+               65230 idle error SerialIn: 0 | Char: h
+               65250 error idle SerialIn: 0 | Char: h
+               65270 idle idle SerialIn: 0 | Char: h
+               65490 idle error SerialIn: 0 | Char: h
+               65510 error idle SerialIn: 0 | Char: h
+               65530 idle idle SerialIn: 0 | Char: h
+               65750 idle error SerialIn: 0 | Char: h
+               65770 error idle SerialIn: 0 | Char: h
+               65790 idle idle SerialIn: 0 | Char: h
+               66010 idle error SerialIn: 0 | Char: h
+               66030 error idle SerialIn: 0 | Char: h
+               66050 idle idle SerialIn: 0 | Char: h
+               66270 idle error SerialIn: 0 | Char: h
+               66290 error idle SerialIn: 0 | Char: h
+               66310 idle idle SerialIn: 0 | Char: h
+               66530 idle error SerialIn: 0 | Char: h
+               66550 error idle SerialIn: 0 | Char: h
+               66570 idle idle SerialIn: 0 | Char: h
+               66790 idle error SerialIn: 0 | Char: h
+               66810 error idle SerialIn: 0 | Char: h
+               66830 idle idle SerialIn: 0 | Char: h
+               67050 idle error SerialIn: 0 | Char: h
+               67070 error idle SerialIn: 0 | Char: h
+               67090 idle idle SerialIn: 0 | Char: h
+               67310 idle error SerialIn: 0 | Char: h
+               67330 error idle SerialIn: 0 | Char: h
+               67350 idle idle SerialIn: 0 | Char: h
+               67570 idle error SerialIn: 0 | Char: h
+               67590 error idle SerialIn: 0 | Char: h
+               67610 idle idle SerialIn: 0 | Char: h
+               67830 idle error SerialIn: 0 | Char: h
+               67850 error idle SerialIn: 0 | Char: h
+               67870 idle idle SerialIn: 0 | Char: h
+               68090 idle error SerialIn: 0 | Char: h
+               68110 error idle SerialIn: 0 | Char: h
+               68130 idle idle SerialIn: 0 | Char: h
+               68350 idle error SerialIn: 0 | Char: h
+               68370 error idle SerialIn: 0 | Char: h
+               68390 idle idle SerialIn: 0 | Char: h
+               68610 idle error SerialIn: 0 | Char: h
+               68630 error idle SerialIn: 0 | Char: h
+               68650 idle idle SerialIn: 0 | Char: h
+               68870 idle error SerialIn: 0 | Char: h
+               68890 error idle SerialIn: 0 | Char: h
+               68910 idle idle SerialIn: 0 | Char: h
+               69130 idle error SerialIn: 0 | Char: h
+               69150 error idle SerialIn: 0 | Char: h
+               69170 idle idle SerialIn: 0 | Char: h
+               69390 idle error SerialIn: 0 | Char: h
+               69410 error idle SerialIn: 0 | Char: h
+               69430 idle idle SerialIn: 0 | Char: h
+               69650 idle error SerialIn: 0 | Char: h
+               69670 error idle SerialIn: 0 | Char: h
+               69690 idle idle SerialIn: 0 | Char: h
+               69910 idle error SerialIn: 0 | Char: h
+               69930 error idle SerialIn: 0 | Char: h
+               69950 idle idle SerialIn: 0 | Char: h
+               70170 idle error SerialIn: 0 | Char: h
+               70190 error idle SerialIn: 0 | Char: h
+               70210 idle idle SerialIn: 0 | Char: h
+               70430 idle error SerialIn: 0 | Char: h
+               70450 error idle SerialIn: 0 | Char: h
+               70470 idle idle SerialIn: 0 | Char: h
+               70690 idle error SerialIn: 0 | Char: h
+               70710 error idle SerialIn: 0 | Char: h
+               70730 idle idle SerialIn: 0 | Char: h
+               70950 idle error SerialIn: 0 | Char: h
+               70970 error idle SerialIn: 0 | Char: h
+               70990 idle idle SerialIn: 0 | Char: h
+               71210 idle error SerialIn: 0 | Char: h
+               71230 error idle SerialIn: 0 | Char: h
+               71250 idle idle SerialIn: 0 | Char: h
+               71470 idle error SerialIn: 0 | Char: h
+               71490 error idle SerialIn: 0 | Char: h
+               71510 idle idle SerialIn: 0 | Char: h
+               71730 idle error SerialIn: 0 | Char: h
+               71750 error idle SerialIn: 0 | Char: h
+               71770 idle idle SerialIn: 0 | Char: h
+               71990 idle error SerialIn: 0 | Char: h
+               72010 error idle SerialIn: 0 | Char: h
+               72030 idle idle SerialIn: 0 | Char: h
+               72250 idle error SerialIn: 0 | Char: h
+               72270 error idle SerialIn: 0 | Char: h
+               72290 idle idle SerialIn: 0 | Char: h
+               72510 idle error SerialIn: 0 | Char: h
+               72530 error idle SerialIn: 0 | Char: h
+               72550 idle idle SerialIn: 0 | Char: h
+               72770 idle error SerialIn: 0 | Char: h
+               72790 error idle SerialIn: 0 | Char: h
+               72810 idle idle SerialIn: 0 | Char: h
+               73030 idle error SerialIn: 0 | Char: h
+               73050 error idle SerialIn: 0 | Char: h
+               73070 idle idle SerialIn: 0 | Char: h
+               73290 idle error SerialIn: 0 | Char: h
+               73310 error idle SerialIn: 0 | Char: h
+               73330 idle idle SerialIn: 0 | Char: h
+               73550 idle error SerialIn: 0 | Char: h
+               73570 error idle SerialIn: 0 | Char: h
+               73590 idle idle SerialIn: 0 | Char: h
+               73810 idle error SerialIn: 0 | Char: h
+               73830 error idle SerialIn: 0 | Char: h
+               73850 idle idle SerialIn: 0 | Char: h
+               74070 idle error SerialIn: 0 | Char: h
+               74090 error idle SerialIn: 0 | Char: h
+               74110 idle idle SerialIn: 0 | Char: h
+               74330 idle error SerialIn: 0 | Char: h
+               74350 error idle SerialIn: 0 | Char: h
+               74370 idle idle SerialIn: 0 | Char: h
+               74590 idle error SerialIn: 0 | Char: h
+               74610 error idle SerialIn: 0 | Char: h
+               74630 idle idle SerialIn: 0 | Char: h
+               74850 idle error SerialIn: 0 | Char: h
+               74870 error idle SerialIn: 0 | Char: h
+               74890 idle idle SerialIn: 0 | Char: h
+               75110 idle error SerialIn: 0 | Char: h
+               75130 error idle SerialIn: 0 | Char: h
+               75150 idle idle SerialIn: 0 | Char: h
+               75370 idle error SerialIn: 0 | Char: h
+               75390 error idle SerialIn: 0 | Char: h
+               75410 idle idle SerialIn: 0 | Char: h
+               75630 idle error SerialIn: 0 | Char: h
+               75650 error idle SerialIn: 0 | Char: h
+               75670 idle idle SerialIn: 0 | Char: h
+               75890 idle error SerialIn: 0 | Char: h
+               75910 error idle SerialIn: 0 | Char: h
+               75930 idle idle SerialIn: 0 | Char: h
+               76150 idle error SerialIn: 0 | Char: h
+               76170 error idle SerialIn: 0 | Char: h
+               76190 idle idle SerialIn: 0 | Char: h
+               76410 idle error SerialIn: 0 | Char: h
+               76430 error idle SerialIn: 0 | Char: h
+               76450 idle idle SerialIn: 0 | Char: h
+               76670 idle error SerialIn: 0 | Char: h
+               76690 error idle SerialIn: 0 | Char: h
+               76710 idle idle SerialIn: 0 | Char: h
+               76930 idle error SerialIn: 0 | Char: h
+               76950 error idle SerialIn: 0 | Char: h
+               76970 idle idle SerialIn: 0 | Char: h
+               77190 idle error SerialIn: 0 | Char: h
+               77210 error idle SerialIn: 0 | Char: h
+               77230 idle idle SerialIn: 0 | Char: h
+               77450 idle error SerialIn: 0 | Char: h
+               77470 error idle SerialIn: 0 | Char: h
+               77490 idle idle SerialIn: 0 | Char: h
+               77710 idle error SerialIn: 0 | Char: h
+               77730 error idle SerialIn: 0 | Char: h
+               77750 idle idle SerialIn: 0 | Char: h
+               77970 idle error SerialIn: 0 | Char: h
+               77990 error idle SerialIn: 0 | Char: h
+               78010 idle idle SerialIn: 0 | Char: h
+               78230 idle error SerialIn: 0 | Char: h
+               78250 error idle SerialIn: 0 | Char: h
+               78270 idle idle SerialIn: 0 | Char: h
+               78490 idle error SerialIn: 0 | Char: h
+               78510 error idle SerialIn: 0 | Char: h
+               78530 idle idle SerialIn: 0 | Char: h
+               78750 idle error SerialIn: 0 | Char: h
+               78770 error idle SerialIn: 0 | Char: h
+               78790 idle idle SerialIn: 0 | Char: h
+               79010 idle error SerialIn: 0 | Char: h
+               79030 error idle SerialIn: 0 | Char: h
+               79050 idle idle SerialIn: 0 | Char: h
+               79270 idle error SerialIn: 0 | Char: h
+               79290 error idle SerialIn: 0 | Char: h
+               79310 idle idle SerialIn: 0 | Char: h
+               79530 idle error SerialIn: 0 | Char: h
+               79550 error idle SerialIn: 0 | Char: h
+               79570 idle idle SerialIn: 0 | Char: h
+               79790 idle error SerialIn: 0 | Char: h
+               79810 error idle SerialIn: 0 | Char: h
+               79830 idle idle SerialIn: 0 | Char: h
+               80050 idle error SerialIn: 0 | Char: h
+               80070 error idle SerialIn: 0 | Char: h
+               80090 idle idle SerialIn: 0 | Char: h
+               80310 idle error SerialIn: 0 | Char: h
+               80330 error idle SerialIn: 0 | Char: h
+               80350 idle idle SerialIn: 0 | Char: h
+               80570 idle error SerialIn: 0 | Char: h
+               80590 error idle SerialIn: 0 | Char: h
+               80610 idle idle SerialIn: 0 | Char: h
+               80830 idle error SerialIn: 0 | Char: h
+               80850 error idle SerialIn: 0 | Char: h
+               80870 idle idle SerialIn: 0 | Char: h
+               81090 idle error SerialIn: 0 | Char: h
+               81110 error idle SerialIn: 0 | Char: h
+               81130 idle idle SerialIn: 0 | Char: h
+               81350 idle error SerialIn: 0 | Char: h
+               81370 error idle SerialIn: 0 | Char: h
+               81390 idle idle SerialIn: 0 | Char: h
+               81610 idle error SerialIn: 0 | Char: h
+               81630 error idle SerialIn: 0 | Char: h
+               81650 idle idle SerialIn: 0 | Char: h
+               81870 idle error SerialIn: 0 | Char: h
+               81890 error idle SerialIn: 0 | Char: h
+               81910 idle idle SerialIn: 0 | Char: h
+               82130 idle error SerialIn: 0 | Char: h
+               82150 error idle SerialIn: 0 | Char: h
+               82170 idle idle SerialIn: 0 | Char: h
+               82390 idle error SerialIn: 0 | Char: h
+               82410 error idle SerialIn: 0 | Char: h
+               82430 idle idle SerialIn: 0 | Char: h
+               82650 idle error SerialIn: 0 | Char: h
+               82670 error idle SerialIn: 0 | Char: h
+               82690 idle idle SerialIn: 0 | Char: h
+               82910 idle error SerialIn: 0 | Char: h
+               82930 error idle SerialIn: 0 | Char: h
+               82950 idle idle SerialIn: 0 | Char: h
+               83170 idle error SerialIn: 0 | Char: h
+               83190 error idle SerialIn: 0 | Char: h
+               83210 idle idle SerialIn: 0 | Char: h
+               83430 idle error SerialIn: 0 | Char: h
+               83450 error idle SerialIn: 0 | Char: h
+               83470 idle idle SerialIn: 0 | Char: h
+               83690 idle error SerialIn: 0 | Char: h
+               83710 error idle SerialIn: 0 | Char: h
+               83730 idle idle SerialIn: 0 | Char: h
+               83950 idle error SerialIn: 0 | Char: h
+               83970 error idle SerialIn: 0 | Char: h
+               83990 idle idle SerialIn: 0 | Char: h
+               84210 idle error SerialIn: 0 | Char: h
+               84230 error idle SerialIn: 0 | Char: h
+               84250 idle idle SerialIn: 0 | Char: h
+               84470 idle error SerialIn: 0 | Char: h
+               84490 error idle SerialIn: 0 | Char: h
+               84510 idle idle SerialIn: 0 | Char: h
+               84730 idle error SerialIn: 0 | Char: h
+               84750 error idle SerialIn: 0 | Char: h
+               84770 idle idle SerialIn: 0 | Char: h
+               84990 idle error SerialIn: 0 | Char: h
+               85010 error idle SerialIn: 0 | Char: h
+               85030 idle idle SerialIn: 0 | Char: h
+               85250 idle error SerialIn: 0 | Char: h
+               85270 error idle SerialIn: 0 | Char: h
+               85290 idle idle SerialIn: 0 | Char: h
+               85510 idle error SerialIn: 0 | Char: h
+               85530 error idle SerialIn: 0 | Char: h
+               85550 idle idle SerialIn: 0 | Char: h
+               85770 idle error SerialIn: 0 | Char: h
+               85790 error idle SerialIn: 0 | Char: h
+               85810 idle idle SerialIn: 0 | Char: h
+               86030 idle error SerialIn: 0 | Char: h
+               86050 error idle SerialIn: 0 | Char: h
+               86070 idle idle SerialIn: 0 | Char: h
+               86290 idle error SerialIn: 0 | Char: h
+               86310 error idle SerialIn: 0 | Char: h
+               86330 idle idle SerialIn: 0 | Char: h
+               86550 idle error SerialIn: 0 | Char: h
+               86570 error idle SerialIn: 0 | Char: h
+               86590 idle idle SerialIn: 0 | Char: h
+               86810 idle error SerialIn: 0 | Char: h
+               86830 error idle SerialIn: 0 | Char: h
+               86850 idle idle SerialIn: 0 | Char: h
+               87070 idle error SerialIn: 0 | Char: h
+               87090 error idle SerialIn: 0 | Char: h
+               87110 idle idle SerialIn: 0 | Char: h
+               87330 idle error SerialIn: 0 | Char: h
+               87350 error idle SerialIn: 0 | Char: h
+               87370 idle idle SerialIn: 0 | Char: h
+               87590 idle error SerialIn: 0 | Char: h
+               87610 error idle SerialIn: 0 | Char: h
+               87630 idle idle SerialIn: 0 | Char: h
+               87850 idle error SerialIn: 0 | Char: h
+               87870 error idle SerialIn: 0 | Char: h
+               87890 idle idle SerialIn: 0 | Char: h
+               88110 idle error SerialIn: 0 | Char: h
+               88130 error idle SerialIn: 0 | Char: h
+               88150 idle idle SerialIn: 0 | Char: h
+               88370 idle error SerialIn: 0 | Char: h
+               88390 error idle SerialIn: 0 | Char: h
+               88410 idle idle SerialIn: 0 | Char: h
+               88630 idle error SerialIn: 0 | Char: h
+               88650 error idle SerialIn: 0 | Char: h
+               88670 idle idle SerialIn: 0 | Char: h
+               88890 idle error SerialIn: 0 | Char: h
+               88910 error idle SerialIn: 0 | Char: h
+               88930 idle idle SerialIn: 0 | Char: h
+               89150 idle error SerialIn: 0 | Char: h
+               89170 error idle SerialIn: 0 | Char: h
+               89190 idle idle SerialIn: 0 | Char: h
+               89410 idle error SerialIn: 0 | Char: h
+               89430 error idle SerialIn: 0 | Char: h
+               89450 idle idle SerialIn: 0 | Char: h
+               89670 idle error SerialIn: 0 | Char: h
+               89690 error idle SerialIn: 0 | Char: h
+               89710 idle idle SerialIn: 0 | Char: h
+               89930 idle error SerialIn: 0 | Char: h
+               89950 error idle SerialIn: 0 | Char: h
+               89970 idle idle SerialIn: 0 | Char: h
+               90190 idle error SerialIn: 0 | Char: h
+               90210 error idle SerialIn: 0 | Char: h
+               90230 idle idle SerialIn: 0 | Char: h
+               90450 idle error SerialIn: 0 | Char: h
+               90470 error idle SerialIn: 0 | Char: h
+               90490 idle idle SerialIn: 0 | Char: h
+               90710 idle error SerialIn: 0 | Char: h
+               90730 error idle SerialIn: 0 | Char: h
+               90750 idle idle SerialIn: 0 | Char: h
+               90970 idle error SerialIn: 0 | Char: h
+               90990 error idle SerialIn: 0 | Char: h
+               91010 idle idle SerialIn: 0 | Char: h
+               91230 idle error SerialIn: 0 | Char: h
+               91250 error idle SerialIn: 0 | Char: h
+               91270 idle idle SerialIn: 0 | Char: h
+               91490 idle error SerialIn: 0 | Char: h
+               91510 error idle SerialIn: 0 | Char: h
+               91530 idle idle SerialIn: 0 | Char: h
+               91750 idle error SerialIn: 0 | Char: h
+               91770 error idle SerialIn: 0 | Char: h
+               91790 idle idle SerialIn: 0 | Char: h
+               92010 idle error SerialIn: 0 | Char: h
+               92030 error idle SerialIn: 0 | Char: h
+               92050 idle idle SerialIn: 0 | Char: h
+               92270 idle error SerialIn: 0 | Char: h
+               92290 error idle SerialIn: 0 | Char: h
+               92310 idle idle SerialIn: 0 | Char: h
+               92530 idle error SerialIn: 0 | Char: h
+               92550 error idle SerialIn: 0 | Char: h
+               92570 idle idle SerialIn: 0 | Char: h
+               92790 idle error SerialIn: 0 | Char: h
+               92810 error idle SerialIn: 0 | Char: h
+               92830 idle idle SerialIn: 0 | Char: h
+               93050 idle error SerialIn: 0 | Char: h
+               93070 error idle SerialIn: 0 | Char: h
+               93090 idle idle SerialIn: 0 | Char: h
+               93310 idle error SerialIn: 0 | Char: h
+               93330 error idle SerialIn: 0 | Char: h
+               93350 idle idle SerialIn: 0 | Char: h
+               93570 idle error SerialIn: 0 | Char: h
+               93590 error idle SerialIn: 0 | Char: h
+               93610 idle idle SerialIn: 0 | Char: h
+               93830 idle error SerialIn: 0 | Char: h
+               93850 error idle SerialIn: 0 | Char: h
+               93870 idle idle SerialIn: 0 | Char: h
+               94090 idle error SerialIn: 0 | Char: h
+               94110 error idle SerialIn: 0 | Char: h
+               94130 idle idle SerialIn: 0 | Char: h
+               94350 idle error SerialIn: 0 | Char: h
+               94370 error idle SerialIn: 0 | Char: h
+               94390 idle idle SerialIn: 0 | Char: h
+               94610 idle error SerialIn: 0 | Char: h
+               94630 error idle SerialIn: 0 | Char: h
+               94650 idle idle SerialIn: 0 | Char: h
+               94870 idle error SerialIn: 0 | Char: h
+               94890 error idle SerialIn: 0 | Char: h
+               94910 idle idle SerialIn: 0 | Char: h
+               95130 idle error SerialIn: 0 | Char: h
+               95150 error idle SerialIn: 0 | Char: h
+               95170 idle idle SerialIn: 0 | Char: h
+               95390 idle error SerialIn: 0 | Char: h
+               95410 error idle SerialIn: 0 | Char: h
+               95430 idle idle SerialIn: 0 | Char: h
+               95650 idle error SerialIn: 0 | Char: h
+               95670 error idle SerialIn: 0 | Char: h
+               95690 idle idle SerialIn: 0 | Char: h
+               95910 idle error SerialIn: 0 | Char: h
+               95930 error idle SerialIn: 0 | Char: h
+               95950 idle idle SerialIn: 0 | Char: h
+               96170 idle error SerialIn: 0 | Char: h
+               96190 error idle SerialIn: 0 | Char: h
+               96210 idle idle SerialIn: 0 | Char: h
+               96430 idle error SerialIn: 0 | Char: h
+               96450 error idle SerialIn: 0 | Char: h
+               96470 idle idle SerialIn: 0 | Char: h
+               96690 idle error SerialIn: 0 | Char: h
+               96710 error idle SerialIn: 0 | Char: h
+               96730 idle idle SerialIn: 0 | Char: h
+               96950 idle error SerialIn: 0 | Char: h
+               96970 error idle SerialIn: 0 | Char: h
+               96990 idle idle SerialIn: 0 | Char: h
+               97210 idle error SerialIn: 0 | Char: h
+               97230 error idle SerialIn: 0 | Char: h
+               97250 idle idle SerialIn: 0 | Char: h
+               97470 idle error SerialIn: 0 | Char: h
+               97490 error idle SerialIn: 0 | Char: h
+               97510 idle idle SerialIn: 0 | Char: h
+               97730 idle error SerialIn: 0 | Char: h
+               97750 error idle SerialIn: 0 | Char: h
+               97770 idle idle SerialIn: 0 | Char: h
+               97990 idle error SerialIn: 0 | Char: h
+               98010 error idle SerialIn: 0 | Char: h
+               98030 idle idle SerialIn: 0 | Char: h
+               98250 idle error SerialIn: 0 | Char: h
+               98270 error idle SerialIn: 0 | Char: h
+               98290 idle idle SerialIn: 0 | Char: h
+               98510 idle error SerialIn: 0 | Char: h
+               98530 error idle SerialIn: 0 | Char: h
+               98550 idle idle SerialIn: 0 | Char: h
+               98770 idle error SerialIn: 0 | Char: h
+               98790 error idle SerialIn: 0 | Char: h
+               98810 idle idle SerialIn: 0 | Char: h
+               99030 idle error SerialIn: 0 | Char: h
+               99050 error idle SerialIn: 0 | Char: h
+               99070 idle idle SerialIn: 0 | Char: h
+               99290 idle error SerialIn: 0 | Char: h
+               99310 error idle SerialIn: 0 | Char: h
+               99330 idle idle SerialIn: 0 | Char: h
+               99550 idle error SerialIn: 0 | Char: h
+               99570 error idle SerialIn: 0 | Char: h
+               99590 idle idle SerialIn: 0 | Char: h
+               99810 idle error SerialIn: 0 | Char: h
+               99830 error idle SerialIn: 0 | Char: h
+               99850 idle idle SerialIn: 0 | Char: h
+              100070 idle error SerialIn: 0 | Char: h
+              100090 error idle SerialIn: 0 | Char: h
+              100110 idle idle SerialIn: 0 | Char: h
+              100330 idle error SerialIn: 0 | Char: h
+              100350 error idle SerialIn: 0 | Char: h
+              100370 idle idle SerialIn: 0 | Char: h
+              100590 idle error SerialIn: 0 | Char: h
+              100610 error idle SerialIn: 0 | Char: h
+              100630 idle idle SerialIn: 0 | Char: h
+              100850 idle error SerialIn: 0 | Char: h
+              100870 error idle SerialIn: 0 | Char: h
+              100890 idle idle SerialIn: 0 | Char: h
+              101110 idle error SerialIn: 0 | Char: h
+              101130 error idle SerialIn: 0 | Char: h
+              101150 idle idle SerialIn: 0 | Char: h
+              101370 idle error SerialIn: 0 | Char: h
+              101390 error idle SerialIn: 0 | Char: h
+              101410 idle idle SerialIn: 0 | Char: h
+              101630 idle error SerialIn: 0 | Char: h
+              101650 error idle SerialIn: 0 | Char: h
+              101670 idle idle SerialIn: 0 | Char: h
+              101890 idle error SerialIn: 0 | Char: h
+              101910 error idle SerialIn: 0 | Char: h
+              101930 idle idle SerialIn: 0 | Char: h
+              102150 idle error SerialIn: 0 | Char: h
+              102170 error idle SerialIn: 0 | Char: h
+              102190 idle idle SerialIn: 0 | Char: h
+              102410 idle error SerialIn: 0 | Char: h
+              102430 error idle SerialIn: 0 | Char: h
+              102450 idle idle SerialIn: 0 | Char: h
+              102670 idle error SerialIn: 0 | Char: h
+              102690 error idle SerialIn: 0 | Char: h
+              102710 idle idle SerialIn: 0 | Char: h
+              102930 idle error SerialIn: 0 | Char: h
+              102950 error idle SerialIn: 0 | Char: h
+              102970 idle idle SerialIn: 0 | Char: h
+              103190 idle error SerialIn: 0 | Char: h
+              103210 error idle SerialIn: 0 | Char: h
+              103230 idle idle SerialIn: 0 | Char: h
+              103450 idle error SerialIn: 0 | Char: h
+              103470 error idle SerialIn: 0 | Char: h
+              103490 idle idle SerialIn: 0 | Char: h
+              103710 idle error SerialIn: 0 | Char: h
+              103730 error idle SerialIn: 0 | Char: h
+              103750 idle idle SerialIn: 0 | Char: h
+              103970 idle error SerialIn: 0 | Char: h
+              103990 error idle SerialIn: 0 | Char: h
+              104010 idle idle SerialIn: 0 | Char: h
+              104230 idle error SerialIn: 0 | Char: h
+              104250 error idle SerialIn: 0 | Char: h
+              104270 idle idle SerialIn: 0 | Char: h
+              104490 idle error SerialIn: 0 | Char: h
+              104510 error idle SerialIn: 0 | Char: h
+              104530 idle idle SerialIn: 0 | Char: h
+              104750 idle error SerialIn: 0 | Char: h
+              104770 error idle SerialIn: 0 | Char: h
+              104790 idle idle SerialIn: 0 | Char: h
+              105010 idle error SerialIn: 0 | Char: h
+              105030 error idle SerialIn: 0 | Char: h
+              105050 idle idle SerialIn: 0 | Char: h
+              105270 idle error SerialIn: 0 | Char: h
+              105290 error idle SerialIn: 0 | Char: h
+              105310 idle idle SerialIn: 0 | Char: h
+              105530 idle error SerialIn: 0 | Char: h
+              105550 error idle SerialIn: 0 | Char: h
+              105570 idle idle SerialIn: 0 | Char: h
+              105790 idle error SerialIn: 0 | Char: h
+              105810 error idle SerialIn: 0 | Char: h
+              105830 idle idle SerialIn: 0 | Char: h
+              106050 idle error SerialIn: 0 | Char: h
+              106070 error idle SerialIn: 0 | Char: h
+              106090 idle idle SerialIn: 0 | Char: h
+              106310 idle error SerialIn: 0 | Char: h
+              106330 error idle SerialIn: 0 | Char: h
+              106350 idle idle SerialIn: 0 | Char: h
+              106570 idle error SerialIn: 0 | Char: h
+              106590 error idle SerialIn: 0 | Char: h
+              106610 idle idle SerialIn: 0 | Char: h
+              106830 idle error SerialIn: 0 | Char: h
+              106850 error idle SerialIn: 0 | Char: h
+              106870 idle idle SerialIn: 0 | Char: h
+              107090 idle error SerialIn: 0 | Char: h
+              107110 error idle SerialIn: 0 | Char: h
+              107130 idle idle SerialIn: 0 | Char: h
+              107350 idle error SerialIn: 0 | Char: h
+              107370 error idle SerialIn: 0 | Char: h
+              107390 idle idle SerialIn: 0 | Char: h
+              107610 idle error SerialIn: 0 | Char: h
+              107630 error idle SerialIn: 0 | Char: h
+              107650 idle idle SerialIn: 0 | Char: h
+              107870 idle error SerialIn: 0 | Char: h
+              107890 error idle SerialIn: 0 | Char: h
+              107910 idle idle SerialIn: 0 | Char: h
+              108130 idle error SerialIn: 0 | Char: h
+              108150 error idle SerialIn: 0 | Char: h
+              108170 idle idle SerialIn: 0 | Char: h
+              108390 idle error SerialIn: 0 | Char: h
+              108410 error idle SerialIn: 0 | Char: h
+              108430 idle idle SerialIn: 0 | Char: h
+              108650 idle error SerialIn: 0 | Char: h
+              108670 error idle SerialIn: 0 | Char: h
+              108690 idle idle SerialIn: 0 | Char: h
+              108910 idle error SerialIn: 0 | Char: h
+              108930 error idle SerialIn: 0 | Char: h
+              108950 idle idle SerialIn: 0 | Char: h
+              109170 idle error SerialIn: 0 | Char: h
+              109190 error idle SerialIn: 0 | Char: h
+              109210 idle idle SerialIn: 0 | Char: h
+              109430 idle error SerialIn: 0 | Char: h
+              109450 error idle SerialIn: 0 | Char: h
+              109470 idle idle SerialIn: 0 | Char: h
+              109690 idle error SerialIn: 0 | Char: h
+              109710 error idle SerialIn: 0 | Char: h
+              109730 idle idle SerialIn: 0 | Char: h
+              109950 idle error SerialIn: 0 | Char: h
+              109970 error idle SerialIn: 0 | Char: h
+              109990 idle idle SerialIn: 0 | Char: h
+              110210 idle error SerialIn: 0 | Char: h
+              110230 error idle SerialIn: 0 | Char: h
+              110250 idle idle SerialIn: 0 | Char: h
+              110470 idle error SerialIn: 0 | Char: h
+              110490 error idle SerialIn: 0 | Char: h
+              110510 idle idle SerialIn: 0 | Char: h
+              110730 idle error SerialIn: 0 | Char: h
+              110750 error idle SerialIn: 0 | Char: h
+              110770 idle idle SerialIn: 0 | Char: h
+              110990 idle error SerialIn: 0 | Char: h
+              111010 error idle SerialIn: 0 | Char: h
+              111030 idle idle SerialIn: 0 | Char: h
+              111250 idle error SerialIn: 0 | Char: h
+              111270 error idle SerialIn: 0 | Char: h
+              111290 idle idle SerialIn: 0 | Char: h
+              111510 idle error SerialIn: 0 | Char: h
+              111530 error idle SerialIn: 0 | Char: h
+              111550 idle idle SerialIn: 0 | Char: h
+              111770 idle error SerialIn: 0 | Char: h
+              111790 error idle SerialIn: 0 | Char: h
+              111810 idle idle SerialIn: 0 | Char: h
+              112030 idle error SerialIn: 0 | Char: h
+              112050 error idle SerialIn: 0 | Char: h
+              112070 idle idle SerialIn: 0 | Char: h
+              112290 idle error SerialIn: 0 | Char: h
+              112310 error idle SerialIn: 0 | Char: h
+              112330 idle idle SerialIn: 0 | Char: h
+              112550 idle error SerialIn: 0 | Char: h
+              112570 error idle SerialIn: 0 | Char: h
+              112590 idle idle SerialIn: 0 | Char: h
+              112810 idle error SerialIn: 0 | Char: h
+              112830 error idle SerialIn: 0 | Char: h
+              112850 idle idle SerialIn: 0 | Char: h
+$finish called from file "tb.sv", line 5670.
+$finish at simulation time               112851
+Simulation complete, time is 112851.
+---------------------------------------------
+
+The tool has just exited abnormally:
+
+
+Release = 'T-2022.06_Full64'  Architecture = 'linux64'  Program = 'DVE'
+
+'35648016 35682754 35684238 140737292840137'
+
+---------------------------------------------
+=======================DVE Context and Call Stack=========================
+Command line: /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 53250" -toolin /tmp/vcs_20230322022905_53248_xinyew..stdin -toolout /tmp/vcs_20230322022905_53248_xinyew..stdout
+
+--- Stack trace follows:
+[New LWP 53520]
+[New LWP 53523]
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+0x00007ffff4616659 in waitpid () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7fffee19e700 (LWP 53523)):
+#0  0x00007ffff4640b5d in read () from /lib64/libc.so.6
+#1  0x00007ffff45ccd54 in __GI__IO_file_underflow () from /lib64/libc.so.6
+#2  0x00007ffff45cdf22 in __GI__IO_default_uflow () from /lib64/libc.so.6
+#3  0x00007ffff45c0cd4 in __GI__IO_getline_info () from /lib64/libc.so.6
+#4  0x00007ffff45bfad6 in fgets () from /lib64/libc.so.6
+#5  0x00000000013f3e10 in ag::dveSmlSocket::run() ()
+#6  0x0000000002b3f93a in QThreadInstance::start(void*) ()
+#7  0x00007ffff5cdfea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007ffff464fb0d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7fffee99f700 (LWP 53520)):
+#0  0x00007ffff5ce3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007ffff548b940 in ?? () from /lib64/libX11.so.6
+#2  0x00007ffff548be39 in ?? () from /lib64/libX11.so.6
+#3  0x00007ffff548113a in XFreeCursor () from /lib64/libX11.so.6
+#4  0x0000000002b03a57 in QCursorData::~QCursorData() ()
+#5  0x0000000002b03f98 in QCursor::~QCursor() ()
+#6  0x0000000002b03fcc in ?? ()
+#7  0x00007ffff458ace9 in __run_exit_handlers () from /lib64/libc.so.6
+#8  0x00007ffff458ad37 in exit () from /lib64/libc.so.6
+#9  0x0000000002aee6ec in ?? ()
+#10 0x00007ffff54a049e in _XIOError () from /lib64/libX11.so.6
+#11 0x00007ffff549ddfd in _XEventsQueued () from /lib64/libX11.so.6
+#12 0x00007ffff547a1f4 in XCheckTypedEvent () from /lib64/libX11.so.6
+#13 0x00000000012cd4f5 in ag::dveXThread::run() ()
+#14 0x0000000002b3f93a in QThreadInstance::start(void*) ()
+#15 0x00007ffff5cdfea5 in start_thread () from /lib64/libpthread.so.0
+#16 0x00007ffff464fb0d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7ffff7f7f740 (LWP 53265)):
+#0  0x00007ffff4616659 in waitpid () from /lib64/libc.so.6
+#1  0x00007ffff4593f62 in do_system () from /lib64/libc.so.6
+#2  0x00007ffff4594311 in system () from /lib64/libc.so.6
+#3  0x00007ffff78ee183 in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e639d2928478c79b3f673f99203bcf8be64600612100082236bffb2007f1e0ef9 () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#4  0x00007ffff78ee790 in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e81c34e9ac4c8988ef4a6e067b3aa9271e9f15440f9e8f69e71727f1bc8d6ddca () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#5  0x00007ffff78efdba in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313efba706aab251478fa49e66610e453774633a6c152e7ef778f93045171fb3645d () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#6  0x00007ffff78e7f43 in SNPSle_d35ca1ff70d465c2b9b1a72eee90a50630165806651fae96c1bbda5b5d02066c () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#7  0x000000000220797b in ag::logErrorMessage(ag::errorType, QString const&, bool) ()
+#8  0x0000000002207f8e in ?? ()
+#9  0x00007ffff458acc9 in __run_exit_handlers () from /lib64/libc.so.6
+#10 0x00007ffff458ad37 in exit () from /lib64/libc.so.6
+#11 0x0000000002aee6ec in ?? ()
+#12 0x00007ffff54a049e in _XIOError () from /lib64/libX11.so.6
+#13 0x00007ffff549e58b in _XReply () from /lib64/libX11.so.6
+#14 0x00007ffff549b5a9 in XTranslateCoordinates () from /lib64/libX11.so.6
+#15 0x0000000002b232e0 in QWidget::mapFromGlobal(QPoint const&) const ()
+#16 0x0000000002c88d14 in QTipManager::eventFilter(QObject*, QEvent*) ()
+#17 0x0000000002b4577c in QApplication::internalNotify(QObject*, QEvent*) ()
+#18 0x0000000002b45b79 in QApplication::notify(QObject*, QEvent*) ()
+#19 0x000000000227cd31 in EkExtQtApp::notify(QObject*, QEvent*) ()
+#20 0x000000000224d549 in ag::baseQtApp::notify(QObject*, QEvent*) ()
+#21 0x0000000002afd605 in QETWidget::translateMouseEvent(_XEvent const*) ()
+#22 0x0000000002afcbfe in QApplication::x11ProcessEvent(_XEvent*) ()
+#23 0x0000000002b0a0df in QEventLoop::processEvents(unsigned int) ()
+#24 0x000000000131942a in ag::ovaEventLoop::processEvents(unsigned int) ()
+#25 0x0000000002b55c29 in QEventLoop::enterLoop() ()
+#26 0x0000000002b55baa in QEventLoop::exec() ()
+#27 0x0000000001318e96 in run_cci_event_loop ()
+#28 0x00000000012cf6b2 in ag::ovaAppInst::enterEventLoop(int, char**) ()
+#29 0x0000000000e840c7 in main ()
+
+Process VmPeak: 466624 kb, VmSize: 415244 kb
+System Free Memory: 206721008 kb, System Free Swap: 33554428 kb
+
+No context available
+==========================================================================

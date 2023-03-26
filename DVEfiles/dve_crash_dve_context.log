@@ -1,0 +1,145 @@
+=======================DVE Context and Call Stack=========================
+Command line: /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 53250" -toolin /tmp/vcs_20230322022905_53248_xinyew..stdin -toolout /tmp/vcs_20230322022905_53248_xinyew..stdout
+
+--- Stack trace follows:
+[New LWP 53520]
+[New LWP 53523]
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+0x00007ffff4616659 in waitpid () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7fffee19e700 (LWP 53523)):
+#0  0x00007ffff4640b5d in read () from /lib64/libc.so.6
+#1  0x00007ffff45ccd54 in __GI__IO_file_underflow () from /lib64/libc.so.6
+#2  0x00007ffff45cdf22 in __GI__IO_default_uflow () from /lib64/libc.so.6
+#3  0x00007ffff45c0cd4 in __GI__IO_getline_info () from /lib64/libc.so.6
+#4  0x00007ffff45bfad6 in fgets () from /lib64/libc.so.6
+#5  0x00000000013f3e10 in ag::dveSmlSocket::run() ()
+#6  0x0000000002b3f93a in QThreadInstance::start(void*) ()
+#7  0x00007ffff5cdfea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007ffff464fb0d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7fffee99f700 (LWP 53520)):
+#0  0x00007ffff5ce3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007ffff548b940 in ?? () from /lib64/libX11.so.6
+#2  0x00007ffff548be39 in ?? () from /lib64/libX11.so.6
+#3  0x00007ffff548113a in XFreeCursor () from /lib64/libX11.so.6
+#4  0x0000000002b03a57 in QCursorData::~QCursorData() ()
+#5  0x0000000002b03f98 in QCursor::~QCursor() ()
+#6  0x0000000002b03fcc in ?? ()
+#7  0x00007ffff458ace9 in __run_exit_handlers () from /lib64/libc.so.6
+#8  0x00007ffff458ad37 in exit () from /lib64/libc.so.6
+#9  0x0000000002aee6ec in ?? ()
+#10 0x00007ffff54a049e in _XIOError () from /lib64/libX11.so.6
+#11 0x00007ffff549ddfd in _XEventsQueued () from /lib64/libX11.so.6
+#12 0x00007ffff547a1f4 in XCheckTypedEvent () from /lib64/libX11.so.6
+#13 0x00000000012cd4f5 in ag::dveXThread::run() ()
+#14 0x0000000002b3f93a in QThreadInstance::start(void*) ()
+#15 0x00007ffff5cdfea5 in start_thread () from /lib64/libpthread.so.0
+#16 0x00007ffff464fb0d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7ffff7f7f740 (LWP 53265)):
+#0  0x00007ffff4616659 in waitpid () from /lib64/libc.so.6
+#1  0x00007ffff4593f62 in do_system () from /lib64/libc.so.6
+#2  0x00007ffff4594311 in system () from /lib64/libc.so.6
+#3  0x00007ffff78ee183 in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e639d2928478c79b3f673f99203bcf8be64600612100082236bffb2007f1e0ef9 () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#4  0x00007ffff78ee790 in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e81c34e9ac4c8988ef4a6e067b3aa9271e9f15440f9e8f69e71727f1bc8d6ddca () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#5  0x00007ffff78efdba in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313efba706aab251478fa49e66610e453774633a6c152e7ef778f93045171fb3645d () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#6  0x00007ffff78e7f43 in SNPSle_d35ca1ff70d465c2b9b1a72eee90a50630165806651fae96c1bbda5b5d02066c () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#7  0x000000000220797b in ag::logErrorMessage(ag::errorType, QString const&, bool) ()
+#8  0x0000000002207f8e in ?? ()
+#9  0x00007ffff458acc9 in __run_exit_handlers () from /lib64/libc.so.6
+#10 0x00007ffff458ad37 in exit () from /lib64/libc.so.6
+#11 0x0000000002aee6ec in ?? ()
+#12 0x00007ffff54a049e in _XIOError () from /lib64/libX11.so.6
+#13 0x00007ffff549e58b in _XReply () from /lib64/libX11.so.6
+#14 0x00007ffff549b5a9 in XTranslateCoordinates () from /lib64/libX11.so.6
+#15 0x0000000002b232e0 in QWidget::mapFromGlobal(QPoint const&) const ()
+#16 0x0000000002c88d14 in QTipManager::eventFilter(QObject*, QEvent*) ()
+#17 0x0000000002b4577c in QApplication::internalNotify(QObject*, QEvent*) ()
+#18 0x0000000002b45b79 in QApplication::notify(QObject*, QEvent*) ()
+#19 0x000000000227cd31 in EkExtQtApp::notify(QObject*, QEvent*) ()
+#20 0x000000000224d549 in ag::baseQtApp::notify(QObject*, QEvent*) ()
+#21 0x0000000002afd605 in QETWidget::translateMouseEvent(_XEvent const*) ()
+#22 0x0000000002afcbfe in QApplication::x11ProcessEvent(_XEvent*) ()
+#23 0x0000000002b0a0df in QEventLoop::processEvents(unsigned int) ()
+#24 0x000000000131942a in ag::ovaEventLoop::processEvents(unsigned int) ()
+#25 0x0000000002b55c29 in QEventLoop::enterLoop() ()
+#26 0x0000000002b55baa in QEventLoop::exec() ()
+#27 0x0000000001318e96 in run_cci_event_loop ()
+#28 0x00000000012cf6b2 in ag::ovaAppInst::enterEventLoop(int, char**) ()
+#29 0x0000000000e840c7 in main ()
+
+Process VmPeak: 466624 kb, VmSize: 415244 kb
+System Free Memory: 206721008 kb, System Free Swap: 33554428 kb
+
+No context available
+==========================================================================

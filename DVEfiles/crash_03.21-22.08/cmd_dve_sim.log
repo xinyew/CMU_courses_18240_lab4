@@ -1,0 +1,27 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpIXYyPG
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.xinyew.36041}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.xinyew.36041}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+ucliGUI::vpdAddHierarchy -scope testbench.R -depth 1 -file /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/inter.vpd; synopsys::dump -flush VPD0
+synopsys::dump -add {testbench.R.C_clear testbench.R.C_count testbench.R.C_en testbench.R.E_clear testbench.R.E_count testbench.R.E_en testbench.R.R_clear testbench.R.R_en testbench.R.S_en testbench.R.clock testbench.R.done testbench.R.fs_error testbench.R.is2bitErr testbench.R.isNew testbench.R.messageByte testbench.R.mux_out testbench.R.received_message testbench.R.reset testbench.R.serialIn testbench.R.sm } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state

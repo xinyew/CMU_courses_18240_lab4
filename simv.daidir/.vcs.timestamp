@@ -1,0 +1,121 @@
+0 
+27
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/include
+-Mxllcflags=
+-gen_obj
+-nc
+-picarchive
+-sverilog
+/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
+library.sv
+task2.sv
+SECDED.sv
+Sender.sv
+tb2.sv
+76
+_P9K_TTY=/dev/pts/5
+ZSH_COMPDUMP=/cache/.zcompdump-hh-1305-08.andrew.local.cmu.edu
+ZSH=/afs/andrew.cmu.edu/usr24/xinyew/.oh-my-zsh
+XMODIFIERS=@im=ibus
+XDG_VTNR=9
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=5637
+XDG_SESSION_DESKTOP=gnome-classic
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/2673167
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr24/xinyew/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+XAUTHORITY=/run/gdm/auth-for-xinyew-TxXvok/database
+WINDOWPATH=1:1:1:2:3:3:4:4:4:5:5:5:5:5:5:7:7:8:8:8:8:9
+VTE_VERSION=5204
+VMR_MODE_FLAG=32
+VIMRUNTIMEDIR=/afs/andrew.cmu.edu/usr24/xinyew/.local/usr/share/vim/vim82
+VIMRUNTIME=/afs/andrew.cmu.edu/usr24/xinyew/.local/usr/share/vim/vim82
+VCS_TARGET_ARCH=amd64
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LIC_EXPIRE_WARNING=0
+VCS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+USERNAME=xinyew
+UNAME=/bin/uname
+TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64
+SYN_DIR=/syn/T-2022.03-SP2
+SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
+SSH_AUTH_SOCK=/run/user/2673167/keyring/ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=26295
+SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/26274,unix/unix:/tmp/.ICE-unix/26274
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QUARTUS_64BIT=1
+QT_IM_MODULE=ibus
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+P9K_TTY=old
+P9K_SSH=0
+OVA_UUM=0
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LSCOLORS=Gxfxcxdxbxegedabagacad
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LESS=-R
+LC_ALL=C
+KRB5CCNAME=KEYRING:persistent:2673167
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.86
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/5f2fa183_53e5_464e_955d_bc0d1d5ab4d1
+GNOME_SHELL_SESSION_MODE=classic
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome-classic
+DESKTOP_SESSION=gnome-classic
+DC_HOME=/syn/T-2022.03-SP2/
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IAH2HDwU72,guid=f46fdb8943ce3c947db7dd2a64209bb5
+CVS_RSH=ssh
+COLORTERM=truecolor
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+AKLOG=/usr/bin/aklog
+0
+0
+5
+1679862098 tb2.sv
+1679441091 Sender.sv
+1679444087 SECDED.sv
+1679861987 task2.sv
+1679862042 library.sv
+4
+1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
+1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
+1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
+1679862107 simv.daidir
+-1 partitionlib

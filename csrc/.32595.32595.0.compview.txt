@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1679449228.904541320, "rt":0.17, "ut":0.09, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1679449228.460472683}
+{"VCS_COMP_START_TIME": 1679449228.460472683}
+{"VCS_COMP_END_TIME": 1679449229.148365704}
+{"VCS_USER_OPTIONS": "-sverilog -nc SECDED.sv library.sv receiver.sv tb.sv Sender.sv"}
