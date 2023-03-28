@@ -47,12 +47,6 @@
         "module",
         10
     ],
-    "clock_divider": [
-        "clock_divider",
-        "gawcm",
-        "module",
-        11
-    ],
     "testbench": [
         "testbench",
         "iAVhC",
