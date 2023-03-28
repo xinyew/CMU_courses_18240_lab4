@@ -12,7 +12,7 @@ module clock_divider_test();
     end
 
     // here we declare the clock_divider module
-    clock_divider #(12580) dut(.*);    
+    clock_divider #(5) dut(.*);    
 
     // begin test_bench
     initial begin
