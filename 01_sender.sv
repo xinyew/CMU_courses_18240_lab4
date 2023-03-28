@@ -13,7 +13,7 @@ module Sender(
   logic [5:0] bit_counter;
 
   initial begin
-    $readmemb("lab5_task1.vm", message_rom);
+    $readmemb("01.vm", message_rom);
   end
 
   always_ff @(posedge clock, posedge reset) begin
