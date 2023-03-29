@@ -1,7 +1,21 @@
 `default_nettype none
 
+// A PIPO Shift Register, with controllable shift direction
+// Load has priority over shifting.
+module LeftShift8Register
+  (input  logic [7:0] D,
+   input  logic en, clock,
+   output logic [511:0] Q);
+
+  always_ff @(posedge clock)
+    if (en)
+      Q <= {Q[503:0], D};
+
+endmodule : LeftShift8Register
+
 module Comparator
-  (input  logic [3:0] A, B,
+   #(parameter   WIDTH = 8)
+  (input  logic [WIDTH-1:0] A, B,
    output logic       AeqB);
 
   assign AeqB = (A == B);
@@ -25,18 +39,6 @@ module MagComp
   assign AgtB = (A >  B);
 
 endmodule: MagComp
-
-// An Adder is a combinational sum generator.
-module Adder
-  #(parameter WIDTH=8)
-  (input  logic [WIDTH-1:0] A, B,
-   input  logic             cin,
-   output logic [WIDTH-1:0] sum,
-   output logic             cout);
-
-   assign {cout, sum} = A + B + cin;
-
-endmodule : Adder
 
 // The Multiplexer chooses one of WIDTH bits
 module Multiplexer
@@ -214,3 +216,4 @@ module BarrelShiftRegister
         Q <= shifted;
 
 endmodule : BarrelShiftRegister
+

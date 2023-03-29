@@ -24,12 +24,12 @@
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
 00_library.sv
+02.sv
 00_SECDED.sv
+02_tb.sv
 01_sender.sv
-01_tb.sv
-01.sv
 76
-_P9K_TTY=/dev/pts/4
+_P9K_TTY=/dev/pts/8
 ZSH_COMPDUMP=/cache/.zcompdump-hh-1305-26.andrew.local.cmu.edu
 ZSH=/afs/andrew.cmu.edu/usr24/xinyew/.oh-my-zsh
 XMODIFIERS=@im=ibus
@@ -91,7 +91,7 @@ LC_ALL=C
 KRB5CCNAME=KEYRING:persistent:2673167
 HISTCONTROL=ignoredups
 GNOME_TERMINAL_SERVICE=:1.85
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/968f4cfb_7072_4975_9a15_7abcc1adc5b6
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/d841e6ce_787d_44c4_a03f_93b91145f47b
 GNOME_SHELL_SESSION_MODE=classic
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 GJS_DEBUG_TOPICS=JS ERROR;JS LOG
@@ -108,15 +108,15 @@ AKLOG=/usr/bin/aklog
 0
 0
 5
-1679451872 01.sv
-1679456488 01_tb.sv
 1680036852 01_sender.sv
+1680052470 02_tb.sv
 1679444087 00_SECDED.sv
-1679863362 00_library.sv
+1680051827 02.sv
+1680050828 00_library.sv
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1680036863 simv.daidir
+1680052474 simv.daidir
 -1 partitionlib
