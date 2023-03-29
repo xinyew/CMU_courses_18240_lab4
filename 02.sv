@@ -52,7 +52,8 @@ module task2
                 .en(S_en), .left(1), .clock(clock), .Q(uncorrected));
 
     // corrector
-    SECDEDdecoder dec1 (.inCode(uncorrected), .is2BitErr(is2bitErr), .outCode(corrected));
+    SECDEDdecoder dec1 (.inCode(uncorrected), .is2BitErr(is2bitErr), 
+                        .outCode(corrected));
 
     // Count whether 13-bit block is received
     Counter #(32) counter1 (.en(C_en), .clear(C_clear), .up(1),
@@ -90,8 +91,11 @@ module task2
     Comparator #(32) comp4 (.A(W_count), .B(32'd3_975), .AeqB(timeNextBit));
 
     // choose from corrected char or error code
-    Mux2to1 m1 (.I0({corrected[12], corrected[11], corrected[10], corrected[9], corrected[7], corrected[6], corrected[5], corrected[3]}),
-                .I1(8'h15), .S(is2bitErr | fs_error | fe_error), .Y(mux_out));
+    Mux2to1 m1 (.I0({corrected[12], corrected[11], corrected[10], 
+                     corrected[9], corrected[7], corrected[6], 
+                     corrected[5], corrected[3]}),
+                .I1(8'h15), .S(is2bitErr | fs_error | fe_error), 
+                .Y(mux_out));
 
     // reg to store the result
     LeftShift8Register reg2 (.en(R_en), .clock(clock),
@@ -103,9 +107,13 @@ module fsm
     (input logic clock, serialIn, reset, timeToSample,
                  blockReceived, fs_error, timeNextBit, is2bitErr,
      output logic S_en, R_en, fe_error,
-     output logic C_en, C_clear, E_en, E_clear, A_en, A_clear, W_en, W_clear, Char_en, Char_clear);
+     output logic C_en, C_clear, E_en, E_clear, A_en, A_clear, 
+                  W_en, W_clear, Char_en, Char_clear);
 
-    enum logic [2:0] {IDLE = 3'b000, SYNC = 3'b001, SAMPLE = 3'b010, WAIT0 = 3'b011, WAIT1 = 3'b100, COMPLETED = 3'b101, ERROR = 3'b110} state, n_state;
+    enum logic [2:0] {IDLE = 3'b000, SYNC = 3'b001, 
+                      SAMPLE = 3'b010, WAIT0 = 3'b011, 
+                      WAIT1 = 3'b100, COMPLETED = 3'b101, 
+                      ERROR = 3'b110} state, n_state;
 
     always_ff @(posedge clock, posedge reset) begin
         if (reset) begin

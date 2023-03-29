@@ -1,5 +1,5 @@
 0 
-29
+28
 +lint=all
 -Mamsrun=
 -Masflags=
@@ -23,29 +23,27 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
-02_chipInterface.sv
-02.sv
 00_library.sv
+01.sv
 00_SECDED.sv
-02_tb.sv
+01_tb.sv
 01_sender.sv
-76
-_P9K_TTY=/dev/pts/2
-ZSH_COMPDUMP=/cache/.zcompdump-hh-1305-27.andrew.local.cmu.edu
+71
+no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
+https_proxy=http://proximus.ece.cmu.edu:3128/
+http_proxy=http://proximus.ece.cmu.edu:3128/
+ftp_proxy=http://proximus.ece.cmu.edu:3128/
+_P9K_TTY=/dev/pts/178
+ZSH_COMPDUMP=/cache/.zcompdump-ece016.ece.local.cmu.edu
 ZSH=/afs/andrew.cmu.edu/usr24/xinyew/.oh-my-zsh
-XMODIFIERS=@im=ibus
-XDG_VTNR=2
-XDG_SESSION_TYPE=x11
-XDG_SESSION_ID=1224
-XDG_SESSION_DESKTOP=gnome-classic
-XDG_SEAT=seat0
+XDG_SESSION_ID=4812
 XDG_RUNTIME_DIR=/run/user/2673167
-XDG_MENU_PREFIX=gnome-
-XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr24/xinyew/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
-XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
-XAUTHORITY=/run/gdm/auth-for-xinyew-1CpfFQ/database
-WINDOWPATH=1:2
-VTE_VERSION=5204
+XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr24/xinyew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VSCODE_IPC_HOOK_CLI=/run/user/2673167/vscode-ipc-4f02a171-14e8-4d20-bc4d-ae9f1fe35cf6.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/2673167/vscode-git-46675af60a.sock
+VSCODE_GIT_ASKPASS_NODE=/afs/andrew.cmu.edu/usr24/xinyew/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node
+VSCODE_GIT_ASKPASS_MAIN=/afs/andrew.cmu.edu/usr24/xinyew/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 VMR_MODE_FLAG=32
 VIMRUNTIMEDIR=/afs/andrew.cmu.edu/usr24/xinyew/.local/usr/share/vim/vim82
 VIMRUNTIME=/afs/andrew.cmu.edu/usr24/xinyew/.local/usr/share/vim/vim82
@@ -60,28 +58,29 @@ VCS_DEPTH=0
 VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH_OVERRIDE=linux
 VCS_ARCH=linux64
-USERNAME=xinyew
 UNAME=/bin/uname
 TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64
+TERM_PROGRAM_VERSION=1.76.2
+TERM_PROGRAM=vscode
 SYN_DIR=/syn/T-2022.03-SP2
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
-SSH_AUTH_SOCK=/run/user/2673167/keyring/ssh
+SSH_CONNECTION=128.2.13.159 34902 172.19.138.18 22
+SSH_CLIENT=128.2.13.159 34902 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SSH_AGENT_PID=9597
 SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/9576,unix/unix:/tmp/.ICE-unix/9576
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 QUARTUS_64BIT=1
-QT_IM_MODULE=ibus
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
 QT_GRAPHICSSYSTEM_CHECKED=1
 QTLIB=/usr/lib64/qt-3.3/lib
 QTINC=/usr/lib64/qt-3.3/include
 QTDIR=/usr/lib64/qt-3.3
 P9K_TTY=old
-P9K_SSH=0
+P9K_SSH=1
 OVA_UUM=0
+NO_PROXY=localhost,127.0.0.1,.cmu.edu,.cmu.local
 MODULESHOME=/usr/share/Modules
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
 LSCOLORS=Gxfxcxdxbxegedabagacad
@@ -90,35 +89,29 @@ LESSOPEN=||/usr/bin/lesspipe.sh %s
 LESS=-R
 LC_ALL=C
 KRB5CCNAME=KEYRING:persistent:2673167
+KDEDIRS=/usr
+HTTP_PROXY=http://proximus.ece.cmu.edu:3128/
+HTTPS_PROXY=http://proximus.ece.cmu.edu:3128/
 HISTCONTROL=ignoredups
-GNOME_TERMINAL_SERVICE=:1.85
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/7c184c9a_ac63_4222_a946_1e5c616e5338
-GNOME_SHELL_SESSION_MODE=classic
-GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-GJS_DEBUG_TOPICS=JS ERROR;JS LOG
-GJS_DEBUG_OUTPUT=stderr
-GDM_LANG=en_US.UTF-8
-GDMSESSION=gnome-classic
-DESKTOP_SESSION=gnome-classic
+GIT_ASKPASS=/afs/andrew.cmu.edu/usr24/xinyew/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/extensions/git/dist/askpass.sh
+FTP_PROXY=http://proximus.ece.cmu.edu:3128/
 DC_HOME=/syn/T-2022.03-SP2/
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-6mtQedIyzR,guid=8e45e7402d22c49ea7ff9aaf642491d0
 CVS_RSH=ssh
 COLORTERM=truecolor
 BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 AKLOG=/usr/bin/aklog
 0
 0
-6
-1680036852 01_sender.sv
-1680127654 02_tb.sv
+5
+1680133032 01_sender.sv
+1680133155 01_tb.sv
 1679444087 00_SECDED.sv
+1680132987 01.sv
 1680050828 00_library.sv
-1680127606 02.sv
-1680066229 02_chipInterface.sv
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1680127658 simv.daidir
+1680133157 simv.daidir
 -1 partitionlib

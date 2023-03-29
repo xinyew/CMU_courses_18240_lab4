@@ -29,7 +29,6 @@ module chipInterface(
 
     logic [7:0] blank;
     assign blank = 8'd0;
-	 assign m = 512'hFFFFEEEEDDDDCCCCBBBBAAAA9999888877776666555544443333222211110000;
 
     SevenSegmentDisplay s1 (.BCX0(selected[31:28]), .blank(blank), .HEX0(HEX7));
     SevenSegmentDisplay s2 (.BCX0(selected[27:24]), .blank(blank), .HEX0(HEX6));

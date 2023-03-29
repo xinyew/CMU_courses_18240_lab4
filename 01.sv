@@ -22,9 +22,14 @@ module Receiver
 
     fsm control(.*);
     ShiftRegister_SIPO #(13) reg1 (.serial(serialIn),
-                .en(S_en), .left(1), .clock(clock), .Q(received_message));
+                                   .en(S_en), 
+                                   .left(1), 
+                                   .clock(clock), 
+                                   .Q(received_message));
 
-    SECDEDdecoder dec1 (.inCode(received_message), .is2BitErr(is2bitErr), .outCode(sm));
+    SECDEDdecoder dec1 (.inCode(received_message), 
+                        .is2BitErr(is2bitErr), 
+                        .outCode(sm));
 
     Counter counter1 (.en(C_en), .clear(C_clear), .up(1),
                     .clock(clock), .Q(C_count));
@@ -36,7 +41,8 @@ module Receiver
 
     Comparator comp2 (.A(E_count), .B(4'd11), .AeqB(fs_error));
 
-    Mux2to1 m1 (.I0({sm[12], sm[11], sm[10], sm[9], sm[7], sm[6], sm[5], sm[3]}),
+    Mux2to1 m1 (.I0({sm[12], sm[11], sm[10], sm[9], 
+                     sm[7], sm[6], sm[5], sm[3]}),
                 .I1(8'h15), .S(is2bitErr | fs_error), .Y(mux_out));
 
     Register reg2 (.en(R_en), .clear(R_clear), .clock(clock),
@@ -48,7 +54,12 @@ module fsm
     (input logic clock, serialIn, reset, done, fs_error,
      output logic S_en, R_en, R_clear, C_en, C_clear, E_en, E_clear);
 
-    enum logic [1:0] {idle = 2'b00, running = 2'b01, completed = 2'b10, error = 2'b11} state, n_state;
+    enum logic [1:0] { 
+                       idle = 2'b00, 
+                       running = 2'b01, 
+                       completed = 2'b10, 
+                       error = 2'b11
+                       } state, n_state;
 
     always_ff @(posedge clock) begin
         if (reset)

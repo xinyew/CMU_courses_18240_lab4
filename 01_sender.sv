@@ -21,7 +21,7 @@ module Sender(
       serialOut <= 0;
       word_counter <= 0;
       bit_counter <= WORD_SIZE - 1;
-		end
+    end
     else begin
       if (word_counter < WORDS)
         serialOut <= message_rom[word_counter][bit_counter];

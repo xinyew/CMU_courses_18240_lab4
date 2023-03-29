@@ -5,23 +5,11 @@
         "module",
         1
     ],
-    "chipInterface": [
-        "chipInterface",
-        "Cr8np",
+    "LeftShift8Register": [
+        "LeftShift8Register",
+        "QNzEg",
         "module",
-        11
-    ],
-    "SevenSegmentDisplay": [
-        "SevenSegmentDisplay",
-        "eIk01",
-        "module",
-        7
-    ],
-    "task2": [
-        "task2",
-        "Anbqc",
-        "module",
-        5
+        14
     ],
     "MagComp": [
         "MagComp",
@@ -40,12 +28,6 @@
         "t8TcA",
         "module",
         4
-    ],
-    "Register": [
-        "Register",
-        "kynWL",
-        "module",
-        6
     ],
     "Synchronizer": [
         "Synchronizer",
