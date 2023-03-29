@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1680127573.709914583, "rt":0.25, "ut":0.09, "st":0.05}}
+{"vcselab":{"timestamp_begin":1680127573.981604775, "rt":0.25, "ut":0.12, "st":0.05}}
+{"link":{"timestamp_begin":1680127574.245715182, "rt":0.13, "ut":0.04, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1680127573.560639830}
+{"VCS_COMP_START_TIME": 1680127573.560639830}
+{"VCS_COMP_END_TIME": 1680127574.407852685}
+{"VCS_USER_OPTIONS": "+lint=all -sverilog -nc 02_chipInterface.sv 02.sv 00_library.sv 00_SECDED.sv 02_tb.sv 01_sender.sv"}
+{"vcs1": {"peak_mem": 338300}}
+{"stitch_vcselab": {"peak_mem": 238980}}

@@ -1,5 +1,5 @@
 0 
-27
+29
 +lint=all
 -Mamsrun=
 -Masflags=
@@ -27,22 +27,24 @@
 02.sv
 00_library.sv
 00_SECDED.sv
+02_tb.sv
+01_sender.sv
 76
-_P9K_TTY=/dev/pts/7
-ZSH_COMPDUMP=/cache/.zcompdump-hh-1305-26.andrew.local.cmu.edu
+_P9K_TTY=/dev/pts/2
+ZSH_COMPDUMP=/cache/.zcompdump-hh-1305-27.andrew.local.cmu.edu
 ZSH=/afs/andrew.cmu.edu/usr24/xinyew/.oh-my-zsh
 XMODIFIERS=@im=ibus
-XDG_VTNR=4
+XDG_VTNR=2
 XDG_SESSION_TYPE=x11
-XDG_SESSION_ID=4753
+XDG_SESSION_ID=1224
 XDG_SESSION_DESKTOP=gnome-classic
 XDG_SEAT=seat0
 XDG_RUNTIME_DIR=/run/user/2673167
 XDG_MENU_PREFIX=gnome-
 XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr24/xinyew/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
 XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
-XAUTHORITY=/run/gdm/auth-for-xinyew-tYsLWc/database
-WINDOWPATH=1:1:1:1:2:2:2:3:3:3:3:3:3:3:3:3:4:4:4
+XAUTHORITY=/run/gdm/auth-for-xinyew-1CpfFQ/database
+WINDOWPATH=1:2
 VTE_VERSION=5204
 VMR_MODE_FLAG=32
 VIMRUNTIMEDIR=/afs/andrew.cmu.edu/usr24/xinyew/.local/usr/share/vim/vim82
@@ -65,10 +67,10 @@ SYN_DIR=/syn/T-2022.03-SP2
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
 SSH_AUTH_SOCK=/run/user/2673167/keyring/ssh
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SSH_AGENT_PID=29796
+SSH_AGENT_PID=9597
 SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/29773,unix/unix:/tmp/.ICE-unix/29773
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/9576,unix/unix:/tmp/.ICE-unix/9576
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 QUARTUS_64BIT=1
@@ -90,7 +92,7 @@ LC_ALL=C
 KRB5CCNAME=KEYRING:persistent:2673167
 HISTCONTROL=ignoredups
 GNOME_TERMINAL_SERVICE=:1.85
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/ee446cbf_389d_4b20_99e8_caae1025df8b
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/7c184c9a_ac63_4222_a946_1e5c616e5338
 GNOME_SHELL_SESSION_MODE=classic
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 GJS_DEBUG_TOPICS=JS ERROR;JS LOG
@@ -99,22 +101,24 @@ GDM_LANG=en_US.UTF-8
 GDMSESSION=gnome-classic
 DESKTOP_SESSION=gnome-classic
 DC_HOME=/syn/T-2022.03-SP2/
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-XWBB6Rqi0t,guid=c54b315eb0e12859e96f17f664235120
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-6mtQedIyzR,guid=8e45e7402d22c49ea7ff9aaf642491d0
 CVS_RSH=ssh
 COLORTERM=truecolor
 BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 AKLOG=/usr/bin/aklog
 0
 0
-4
+6
+1680036852 01_sender.sv
+1680127654 02_tb.sv
 1679444087 00_SECDED.sv
 1680050828 00_library.sv
-1680057444 02.sv
-1680062856 02_chipInterface.sv
+1680127606 02.sv
+1680066229 02_chipInterface.sv
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1680063005 simv.daidir
+1680127658 simv.daidir
 -1 partitionlib

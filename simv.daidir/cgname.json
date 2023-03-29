@@ -15,7 +15,13 @@
         "SevenSegmentDisplay",
         "eIk01",
         "module",
-        6
+        7
+    ],
+    "task2": [
+        "task2",
+        "Anbqc",
+        "module",
+        5
     ],
     "MagComp": [
         "MagComp",
@@ -39,7 +45,7 @@
         "Register",
         "kynWL",
         "module",
-        7
+        6
     ],
     "Synchronizer": [
         "Synchronizer",
@@ -58,6 +64,12 @@
         "ts568",
         "module",
         10
+    ],
+    "testbench": [
+        "testbench",
+        "iAVhC",
+        "module",
+        13
     ],
     "...MASTER...": [
         "SIM",

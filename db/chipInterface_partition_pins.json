@@ -264,11 +264,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "UART_RXD",
 					"strict" : false
 				},
 				{
-					"name" : "UART_RXD",
+					"name" : "KEY[0]",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for chipInterface
-Wed Mar 29 01:04:04 2023
+Wed Mar 29 19:04:10 2023
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
 
 
@@ -41,11 +41,10 @@ Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
  33. Port Connectivity Checks: "task2:R|Counter:counter1"
  34. Port Connectivity Checks: "task2:R|SECDEDdecoder:dec1"
  35. Port Connectivity Checks: "task2:R|ShiftRegister_SIPO:reg1"
- 36. Port Connectivity Checks: "task2:R|fsm:control"
- 37. Port Connectivity Checks: "task2:R"
- 38. Post-Synthesis Netlist Statistics for Top Partition
- 39. Elapsed Time Per Partition
- 40. Analysis & Synthesis Messages
+ 36. Port Connectivity Checks: "task2:R"
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
 
 
 
@@ -72,13 +71,13 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 29 01:04:04 2023           ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 29 19:04:10 2023           ;
 ; Quartus Prime Version              ; 16.1.2 Build 203 01/18/2017 SJ Standard Edition ;
 ; Revision Name                      ; chipInterface                                   ;
 ; Top-level Entity Name              ; chipInterface                                   ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 1,148                                           ;
-;     Total combinational functions  ; 631                                             ;
+; Total logic elements               ; 1,149                                           ;
+;     Total combinational functions  ; 632                                             ;
 ;     Dedicated logic registers      ; 660                                             ;
 ; Total registers                    ; 660                                             ;
 ; Total pins                         ; 80                                              ;
@@ -216,16 +215,16 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 1,148          ;
+; Estimated Total logic elements              ; 1,149          ;
 ;                                             ;                ;
-; Total combinational functions               ; 631            ;
+; Total combinational functions               ; 632            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 452            ;
-;     -- 3 input functions                    ; 7              ;
+;     -- 4 input functions                    ; 456            ;
+;     -- 3 input functions                    ; 4              ;
 ;     -- <=2 input functions                  ; 172            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 507            ;
+;     -- normal mode                          ; 508            ;
 ;     -- arithmetic mode                      ; 124            ;
 ;                                             ;                ;
 ; Total registers                             ; 660            ;
@@ -238,8 +237,8 @@ agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 660            ;
-; Total fan-out                               ; 4317           ;
-; Average fan-out                             ; 2.98           ;
+; Total fan-out                               ; 4356           ;
+; Average fan-out                             ; 3.00           ;
 +---------------------------------------------+----------------+
 
 
@@ -248,7 +247,7 @@ agreement for further details.
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name         ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+---------------------+--------------+
-; |chipInterface                   ; 631 (0)             ; 660 (0)                   ; 0           ; 0            ; 0       ; 0         ; 80   ; 0            ; |chipInterface                                                                ; chipInterface       ; work         ;
+; |chipInterface                   ; 632 (0)             ; 660 (0)                   ; 0           ; 0            ; 0       ; 0         ; 80   ; 0            ; |chipInterface                                                                ; chipInterface       ; work         ;
 ;    |SevenSegmentDisplay:s1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|SevenSegmentDisplay:s1                                         ; SevenSegmentDisplay ; work         ;
 ;    |SevenSegmentDisplay:s2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|SevenSegmentDisplay:s2                                         ; SevenSegmentDisplay ; work         ;
 ;    |SevenSegmentDisplay:s3|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|SevenSegmentDisplay:s3                                         ; SevenSegmentDisplay ; work         ;
@@ -258,24 +257,24 @@ agreement for further details.
 ;    |SevenSegmentDisplay:s7|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|SevenSegmentDisplay:s7                                         ; SevenSegmentDisplay ; work         ;
 ;    |SevenSegmentDisplay:s8|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|SevenSegmentDisplay:s8                                         ; SevenSegmentDisplay ; work         ;
 ;    |select:s|                    ; 353 (353)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|select:s                                                       ; select              ; work         ;
-;    |task2:R|                     ; 222 (3)             ; 660 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R                                                        ; task2               ; work         ;
+;    |task2:R|                     ; 223 (1)             ; 660 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R                                                        ; task2               ; work         ;
 ;       |Comparator:comp1|         ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Comparator:comp1                                       ; Comparator          ; work         ;
-;       |Comparator:comp2|         ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Comparator:comp2                                       ; Comparator          ; work         ;
+;       |Comparator:comp2|         ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Comparator:comp2                                       ; Comparator          ; work         ;
 ;       |Comparator:comp3|         ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Comparator:comp3                                       ; Comparator          ; work         ;
 ;       |Comparator:comp4|         ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Comparator:comp4                                       ; Comparator          ; work         ;
 ;       |Counter:counter1|         ; 33 (33)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Counter:counter1                                       ; Counter             ; work         ;
 ;       |Counter:counter2|         ; 32 (32)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Counter:counter2                                       ; Counter             ; work         ;
 ;       |Counter:counter3|         ; 32 (32)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Counter:counter3                                       ; Counter             ; work         ;
-;       |Counter:counter4|         ; 32 (32)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Counter:counter4                                       ; Counter             ; work         ;
+;       |Counter:counter4|         ; 34 (34)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Counter:counter4                                       ; Counter             ; work         ;
 ;       |LeftShift8Register:reg2|  ; 0 (0)               ; 512 (512)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|LeftShift8Register:reg2                                ; LeftShift8Register  ; work         ;
-;       |Mux2to1:m1|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Mux2to1:m1                                             ; Mux2to1             ; work         ;
-;       |SECDEDdecoder:dec1|       ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1                                     ; SECDEDdecoder       ; work         ;
-;          |makeCorrect:m3|        ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeCorrect:m3                      ; makeCorrect         ; work         ;
-;          |makeIs2BitErr:m4|      ; 7 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeIs2BitErr:m4                    ; makeIs2BitErr       ; work         ;
+;       |Mux2to1:m1|               ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|Mux2to1:m1                                             ; Mux2to1             ; work         ;
+;       |SECDEDdecoder:dec1|       ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1                                     ; SECDEDdecoder       ; work         ;
+;          |makeCorrect:m3|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeCorrect:m3                      ; makeCorrect         ; work         ;
+;          |makeIs2BitErr:m4|      ; 6 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeIs2BitErr:m4                    ; makeIs2BitErr       ; work         ;
 ;             |makeGlobalParity:m| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeIs2BitErr:m4|makeGlobalParity:m ; makeGlobalParity    ; work         ;
-;          |makeSyndrome:m1|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeSyndrome:m1                     ; makeSyndrome        ; work         ;
+;          |makeSyndrome:m1|       ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeSyndrome:m1                     ; makeSyndrome        ; work         ;
 ;       |ShiftRegister_SIPO:reg1|  ; 0 (0)               ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|ShiftRegister_SIPO:reg1                                ; ShiftRegister_SIPO  ; work         ;
-;       |fsm:control|              ; 19 (19)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|fsm:control                                            ; fsm                 ; work         ;
+;       |fsm:control|              ; 18 (18)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chipInterface|task2:R|fsm:control                                            ; fsm                 ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -318,7 +317,7 @@ Encoding Type:  One-Hot
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 7     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 557   ;
+; Number of registers using Clock Enable       ; 589   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -328,8 +327,9 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |chipInterface|task2:R|Counter:counter1|Q[6]                        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |chipInterface|task2:R|LeftShift8Register:reg2|Q[6]                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |chipInterface|task2:R|Counter:counter1|Q[20]                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |chipInterface|task2:R|LeftShift8Register:reg2|Q[7]                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |chipInterface|task2:R|Counter:counter4|Q[18]                       ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeCorrect:m3|ShiftLeft0 ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |chipInterface|task2:R|SECDEDdecoder:dec1|makeCorrect:m3|ShiftLeft0 ;
 ; 17:1               ; 32 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; No         ; |chipInterface|select:s|ShiftRight0                                 ;
@@ -499,13 +499,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+-----------------------+
 ; Port      ; Type  ; Severity ; Details               ;
 +-----------+-------+----------+-----------------------+
-; B[8..7]   ; Input ; Info     ; Stuck at VCC          ;
-; B[5..4]   ; Input ; Info     ; Stuck at VCC          ;
-; B[31..12] ; Input ; Info     ; Stuck at GND          ;
-; B[10..9]  ; Input ; Info     ; Stuck at GND          ;
+; B[13..11] ; Input ; Info     ; Stuck at VCC          ;
+; B[31..16] ; Input ; Info     ; Stuck at GND          ;
+; B[8..7]   ; Input ; Info     ; Stuck at GND          ;
 ; B[1..0]   ; Input ; Info     ; Stuck at GND          ;
-; B[11]     ; Input ; Info     ; Stuck at VCC          ;
-; B[6]      ; Input ; Info     ; Stuck at GND          ;
+; B[15]     ; Input ; Info     ; Stuck at VCC          ;
+; B[14]     ; Input ; Info     ; Stuck at GND          ;
+; B[10]     ; Input ; Info     ; Stuck at GND          ;
+; B[9]      ; Input ; Info     ; Stuck at VCC          ;
+; B[6]      ; Input ; Info     ; Stuck at VCC          ;
+; B[5]      ; Input ; Info     ; Stuck at GND          ;
+; B[4]      ; Input ; Info     ; Stuck at VCC          ;
 ; B[3]      ; Input ; Info     ; Stuck at GND          ;
 ; B[2]      ; Input ; Info     ; Stuck at VCC          ;
 +-----------+-------+----------+-----------------------+
@@ -607,15 +611,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "task2:R|fsm:control"                                                                    ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; fe_error ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "task2:R"                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -634,19 +629,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ff         ; 660                         ;
 ;     CLR               ; 7                           ;
 ;     ENA               ; 525                         ;
-;     ENA SCLR          ; 32                          ;
-;     SCLR              ; 96                          ;
-; cycloneiii_lcell_comb ; 639                         ;
+;     ENA SCLR          ; 64                          ;
+;     SCLR              ; 64                          ;
+; cycloneiii_lcell_comb ; 640                         ;
 ;     arith             ; 124                         ;
 ;         2 data inputs ; 124                         ;
-;     normal            ; 515                         ;
+;     normal            ; 516                         ;
 ;         1 data inputs ; 12                          ;
 ;         2 data inputs ; 44                          ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 452                         ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 456                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 5.45                        ;
+; Average LUT depth     ; 5.48                        ;
 +-----------------------+-----------------------------+
 
 
@@ -655,7 +650,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -665,14 +660,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
-    Info: Processing started: Wed Mar 29 01:03:56 2023
+    Info: Processing started: Wed Mar 29 19:04:04 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off chipInterface -c chipInterface
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 3 design units, including 3 entities, in source file 02_chipInterface.sv
     Info (12023): Found entity 1: chipInterface File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 2
-    Info (12023): Found entity 2: select File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 46
-    Info (12023): Found entity 3: SevenSegmentDisplay File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 58
+    Info (12023): Found entity 2: select File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 47
+    Info (12023): Found entity 3: SevenSegmentDisplay File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 59
 Info (12021): Found 2 design units, including 2 entities, in source file 02.sv
     Info (12023): Found entity 1: task2 File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02.sv Line: 3
     Info (12023): Found entity 2: fsm File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02.sv Line: 102
@@ -698,6 +693,7 @@ Info (12021): Found 13 design units, including 13 entities, in source file 00_li
     Info (12023): Found entity 12: ShiftRegister_SIPO File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/00_library.sv Line: 180
     Info (12023): Found entity 13: BarrelShiftRegister File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/00_library.sv Line: 196
 Info (12127): Elaborating entity "chipInterface" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at 02_chipInterface.sv(10): object "m" assigned a value but never read File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 10
 Info (12128): Elaborating entity "task2" for hierarchy "task2:R" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 23
 Warning (10034): Output port "isNew" at 02.sv(6) has no driver File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02.sv Line: 6
 Info (12128): Elaborating entity "fsm" for hierarchy "task2:R|fsm:control" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02.sv Line: 48
@@ -714,7 +710,7 @@ Info (12128): Elaborating entity "Comparator" for hierarchy "task2:R|Comparator:
 Info (12128): Elaborating entity "Mux2to1" for hierarchy "task2:R|Mux2to1:m1" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02.sv Line: 94
 Info (12128): Elaborating entity "LeftShift8Register" for hierarchy "task2:R|LeftShift8Register:reg2" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02.sv Line: 98
 Info (12128): Elaborating entity "select" for hierarchy "select:s" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 28
-Info (12128): Elaborating entity "SevenSegmentDisplay" for hierarchy "SevenSegmentDisplay:s1" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 33
+Info (12128): Elaborating entity "SevenSegmentDisplay" for hierarchy "SevenSegmentDisplay:s1" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 34
 Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
@@ -734,14 +730,14 @@ Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 6
     Warning (15610): No output dependent on input pin "KEY[2]" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 6
     Warning (15610): No output dependent on input pin "KEY[3]" File: /afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_chipInterface.sv Line: 6
-Info (21057): Implemented 1228 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1229 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 24 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 1148 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 1136 megabytes
-    Info: Processing ended: Wed Mar 29 01:04:04 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info (21061): Implemented 1149 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 1176 megabytes
+    Info: Processing ended: Wed Mar 29 19:04:10 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:16
 
 

@@ -22,7 +22,7 @@ module testbench();
   end
 
   initial begin
-    $monitor($time,, "%10s %10s| Char: %h %s", R.control.state.name, R.control.n_state.name, byteOut, byteOut);
+    $monitor($time,, "%8s %8s Mux: %b Char: %h %s %b %b", R.control.state.name, R.control.n_state.name, R.reg1.Q, byteOut, byteOut, R.fs_error, R.is2bitErr);
     //$monitor($time,, "Char: %c", byteOut);
     @(posedge clock);
     reset <= 0;

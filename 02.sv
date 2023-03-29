@@ -81,7 +81,7 @@ module task2
     Comparator #(32) comp1 (.A(C_count), .B(32'd13), .AeqB(blockReceived));
 
     // whether we get a frame error of 10 consecutive 0s
-    Comparator #(32) comp2 (.A(E_count), .B(32'd2_484), .AeqB(fs_error));
+    Comparator #(32) comp2 (.A(E_count), .B(32'd47_700), .AeqB(fs_error));
 
     // whether it's time to sample after syncing 8 * 3975
     Comparator #(32) comp3 (.A(A_count), .B(32'd1_988), .AeqB(timeToSample));
@@ -91,7 +91,7 @@ module task2
 
     // choose from corrected char or error code
     Mux2to1 m1 (.I0({corrected[12], corrected[11], corrected[10], corrected[9], corrected[7], corrected[6], corrected[5], corrected[3]}),
-                .I1(8'h15), .S(is2bitErr | fs_error), .Y(mux_out));
+                .I1(8'h15), .S(is2bitErr | fs_error | fe_error), .Y(mux_out));
 
     // reg to store the result
     LeftShift8Register reg2 (.en(R_en), .clock(clock),
@@ -265,22 +265,49 @@ module fsm
             COMPLETED : begin
                 if (~timeNextBit) begin
                   n_state = COMPLETED;
-						fe_error = 0;
+                  fe_error = 0;
                   R_en = 0;
                   Char_en = 0;
+                  W_en = 1;
+                  W_clear = 0;
                 end
                 else if (is2bitErr || serialIn) begin
                   n_state = ERROR;
                   fe_error = 1;
                   R_en = 1;
                   Char_en = 1;
+                  W_en = 0;
+                  W_clear = 1;
                 end
                 else begin
                   n_state = IDLE;
                   fe_error = 0;
                   R_en = 1;
                   Char_en = 1;
+                  W_en = 1;
+                  W_clear = 0;
                 end
+                // Stop shifting
+                S_en = 0;
+                // Stop counting loop counter, clear it
+                C_en = 0;
+                C_clear = 1;
+                // keep clearing frame error counter
+                E_en = 0;
+                E_clear = 1;
+                // Stop counting sampling timing and clear it
+                A_en = 0;
+                A_clear = 1;
+                // increase char count, and do not clear it
+                // enable register
+            end
+
+            ERROR : begin
+                fe_error = 0;
+                if (~timeNextBit)
+                  n_state = ERROR;
+                else
+                  n_state = IDLE;
                 // Stop shifting
                 S_en = 0;
                 // Stop counting loop counter, clear it
@@ -295,27 +322,6 @@ module fsm
                 // Stop counting next sampling timing without syncing, clear
                 W_en = 1;
                 W_clear = 0;
-                // increase char count, and do not clear it
-                // enable register
-            end
-
-            ERROR : begin
-                fe_error = 0;
-                n_state = IDLE;
-                // Stop shifting
-                S_en = 0;
-                // Stop counting loop counter, clear it
-                C_en = 0;
-                C_clear = 1;
-                // keep clearing frame error counter
-                E_en = 0;
-                E_clear = 1;
-                // Stop counting sampling timing and clear it
-                A_en = 0;
-                A_clear = 1;
-                // Stop counting next sampling timing without syncing, clear
-                W_en = 0;
-                W_clear = 1;
                 // do not increase char count, and do not clear it
                 Char_en = 0;
                 // enable register
