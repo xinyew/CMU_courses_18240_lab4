@@ -1,0 +1,16 @@
+
+State Machine - |chipInterface|interface_fsm:control|state
+Name state.start state.next_8 state.view 
+state.start 0 0 0 
+state.view 1 0 1 
+state.next_8 1 1 0 
+
+State Machine - |chipInterface|task2:R|fsm:control|state
+Name state.ERROR state.COMPLETED state.WAIT1 state.WAIT0 state.SAMPLE state.SYNC state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.SYNC 0 0 0 0 0 1 1 
+state.SAMPLE 0 0 0 0 1 0 1 
+state.WAIT0 0 0 0 1 0 0 1 
+state.WAIT1 0 0 1 0 0 0 1 
+state.COMPLETED 0 1 0 0 0 0 1 
+state.ERROR 1 0 0 0 0 0 1 

@@ -45,111 +45,78 @@ gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_list_select -id Hier.1 -current_item_name MagComp -current_item_type Scope  -selected  {  }
+gui_list_select -id Hier.1 -current_item_name testbench -current_item_type Scope  -selected  { testbench   }
 gui_list_expand -id  Hier.1   testbench
-gui_list_expand -id  Hier.1   testbench.R
 gui_list_select -id Hier.1 -current_item_name testbench.R -current_item_type Scope  -selected  { testbench.R   }
-gui_list_select -id Data.1 -selected  { testbench.R.R_en   }
-gui_list_select -id Data.1 -selected  { {testbench.R.messageByte[7:0]}   }
+gui_list_select -id Data.1 -selected  { testbench.R.S_en   }
+gui_list_select_all -id Data.1
 gui_open_window Wave
-gui_list_add -id Wave.1 -from Data.1 { {testbench.R.messageByte[7:0]} } -insertionbar
+gui_list_add -id Wave.1 -from Data.1 { testbench.R.clock testbench.R.reset testbench.R.serialIn {testbench.R.messageBytes[511:0]} testbench.R.isNew testbench.R.is2bitErr testbench.R.fs_error testbench.R.fe_error testbench.R.timeToSample testbench.R.timeNextBit testbench.R.blockReceived testbench.R.S_en testbench.R.R_en testbench.R.C_en testbench.R.C_clear {testbench.R.C_count[31:0]} testbench.R.E_en testbench.R.E_clear {testbench.R.E_count[31:0]} testbench.R.A_en testbench.R.A_clear {testbench.R.A_count[31:0]} testbench.R.W_en testbench.R.W_clear {testbench.R.W_count[31:0]} testbench.R.Char_en testbench.R.Char_clear {testbench.R.Char_count[31:0]} {testbench.R.mux_out[7:0]} {testbench.R.uncorrected[12:0]} {testbench.R.corrected[12:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 445
 gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_seek_next -id Wave.1 -number 1 
+gui_sim_restart
+gui_sim_continue  
+gui_marker_move -id  Wave.1 C1 10011719
+gui_marker_move -id  Wave.1 C1 10011701
+gui_list_expand -id  Wave.1   {testbench.R.messageBytes[511:0]}
+gui_list_select -id Wave.1 -selected  { {testbench.R.messageBytes[511:0]}   }
+gui_wv_zoom_timerange -id  Wave.1 10011709 10011732
+gui_wv_scroll_hslidermove -id  Wave.1 581547145
+gui_wv_zoom_timerange -id  Wave.1 10004177 10004178
+gui_wv_zoom_timerange -id  Wave.1 10004177 10004178
+gui_wv_zoom_timerange -id  Wave.1 10004177 10004178
+gui_wv_zoom_timerange -id  Wave.1 10004177 10004178
+gui_wv_zoom_timerange -id  Wave.1 10004177 10004178
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_list_collapse -id  Wave.1   {testbench.R.messageBytes[511:0]}
 gui_zoom -window Wave.1 -factor 0.5
 gui_zoom -window Wave.1 -factor 0.5
-gui_list_select -id Wave.1 -selected  { {testbench.R.messageByte[7:0]}   }
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_zoom_timerange -id  Wave.1 9947486 10020009
+gui_wv_zoom_timerange -id  Wave.1 9973404 9976984
 gui_list_set_selected_property -id Wave.1 -radix ascii
-gui_marker_move -id  Wave.1 C1 817
-gui_zoom -window Wave.1 -factor 0.5
-gui_zoom -window Wave.1 -factor 0.5
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scrollright -id  Wave.1  line
-gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_set_selected_property -id Wave.1 -radix hex
+gui_close_window -window TopLevel.2
+gui_list_select -id Hier.1 -current_item_name testbench.S -current_item_type Scope  -selected  { testbench.S   }
+gui_list_select -id Hier.1 -current_item_name testbench.R -current_item_type Scope  -selected  { testbench.R   }
+gui_list_expand -id  Hier.1   testbench.R
+gui_list_select -id Hier.1 -current_item_name testbench.R.reg2 -current_item_type Scope  -selected  { testbench.R.reg2   }
+gui_list_select -id Hier.1 -current_item_name testbench.R.reg1 -current_item_type Scope  -selected  { testbench.R.reg1   }
+gui_list_select -id Hier.1 -current_item_name testbench.R.reg2 -current_item_type Scope  -selected  { testbench.R.reg1  testbench.R.reg2   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { testbench.R.reg1 testbench.R.reg2 } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 445
+gui_sim_restart
+gui_list_select -id Wave.1 -selected  { {testbench.R.reg2.D[7:0]}   }
+gui_list_expand -id  Wave.1   {testbench.R.reg1.Q[12:0]}
+gui_list_collapse -id  Wave.1   {testbench.R.reg1.Q[12:0]}
+gui_list_expand -id  Wave.1   {testbench.R.reg1.Q[12:0]}
+gui_list_collapse -id  Wave.1   {testbench.R.reg1.Q[12:0]}
+gui_list_expand -id  Wave.1   {testbench.R.reg1.Q[12:0]}
+gui_list_collapse -id  Wave.1   {testbench.R.reg1.Q[12:0]}
+gui_sim_continue  
+gui_wv_zoom_timerange -id  Wave.1 10011703 10011714

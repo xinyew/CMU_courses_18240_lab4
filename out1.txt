@@ -1,0 +1,343 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Mar 28 21:36 2023
+                   0                      | Char: xx
+                  10       idle       idle| Char: xx
+                 170       idle    running| Char: xx
+                 190    running    running| Char: xx
+                 430    running  completed| Char: xx
+                 450  completed       idle| Char: xx
+                 470       idle       idle| Char: 53 S
+                 550       idle    running| Char: 53 S
+                 570    running    running| Char: 53 S
+                 810    running  completed| Char: 53 S
+                 830  completed       idle| Char: 53 S
+                 850       idle       idle| Char: 6f o
+                 910       idle    running| Char: 6f o
+                 930    running    running| Char: 6f o
+                1170    running  completed| Char: 6f o
+                1190  completed       idle| Char: 6f o
+                1210       idle       idle| Char: 6d m
+                1290       idle    running| Char: 6d m
+                1310    running    running| Char: 6d m
+                1550    running  completed| Char: 6d m
+                1570  completed      error| Char: 6d m
+                1590      error       idle| Char: 65 e
+                1610       idle       idle| Char: 65 e
+                1650       idle    running| Char: 65 e
+                1670    running    running| Char: 65 e
+                1910    running  completed| Char: 65 e
+                1930  completed       idle| Char: 65 e
+                1950       idle       idle| Char: 74 t
+                1970       idle    running| Char: 74 t
+                1990    running    running| Char: 74 t
+                2230    running  completed| Char: 74 t
+                2250  completed       idle| Char: 74 t
+                2270       idle       idle| Char: 69 i
+                2370       idle    running| Char: 69 i
+                2390    running    running| Char: 69 i
+                2630    running  completed| Char: 69 i
+                2650  completed       idle| Char: 69 i
+                2670       idle       idle| Char: 6d m
+                2770       idle    running| Char: 6d m
+                2790    running    running| Char: 6d m
+                3030    running  completed| Char: 6d m
+                3050  completed       idle| Char: 6d m
+                3070       idle       idle| Char: 65 e
+                3110       idle    running| Char: 65 e
+                3130    running    running| Char: 65 e
+                3370    running  completed| Char: 65 e
+                3390  completed       idle| Char: 65 e
+                3410       idle       idle| Char: 73 s
+                3530       idle    running| Char: 73 s
+                3550    running    running| Char: 73 s
+                3790    running  completed| Char: 73 s
+                3810  completed       idle| Char: 73 s
+                3830       idle       idle| Char: 20
+                3930       idle    running| Char: 20
+                3950    running    running| Char: 20
+                4190    running  completed| Char: 20
+                4210  completed       idle| Char: 20
+                4230       idle       idle| Char: 49 I
+                4310       idle    running| Char: 49 I
+                4330    running    running| Char: 49 I
+                4570    running  completed| Char: 49 I
+                4590  completed       idle| Char: 49 I
+                4610       idle       idle| Char: 20
+                4670       idle    running| Char: 20
+                4690    running    running| Char: 20
+                4930    running  completed| Char: 20
+                4950  completed       idle| Char: 20
+                4970       idle       idle| Char: 64 d
+                5150       idle    running| Char: 64 d
+                5170    running    running| Char: 64 d
+                5410    running  completed| Char: 64 d
+                5430  completed       idle| Char: 64 d
+                5450       idle       idle| Char: 72 r
+                5490       idle    running| Char: 72 r
+                5510    running    running| Char: 72 r
+                5750    running  completed| Char: 72 r
+                5770  completed       idle| Char: 72 r
+                5790       idle       idle| Char: 65 e
+                5850       idle    running| Char: 65 e
+                5870    running    running| Char: 65 e
+                6110    running  completed| Char: 65 e
+                6130  completed       idle| Char: 65 e
+                6150       idle       idle| Char: 61 a
+                6290       idle    running| Char: 61 a
+                6310    running    running| Char: 61 a
+                6550    running  completed| Char: 61 a
+                6570  completed       idle| Char: 61 a
+                6590       idle       idle| Char: 15 
+                6750       idle    running| Char: 15 
+                6770    running    running| Char: 15 
+                7010    running  completed| Char: 15 
+                7030  completed       idle| Char: 15 
+                7050       idle       idle| Char: 20
+                7230       idle    running| Char: 20
+                7250    running    running| Char: 20
+                7490    running  completed| Char: 20
+                7510  completed       idle| Char: 20
+                7530       idle       idle| Char: 6f o
+                7550       idle    running| Char: 6f o
+                7570    running    running| Char: 6f o
+                7810    running  completed| Char: 6f o
+                7830  completed       idle| Char: 6f o
+                7850       idle       idle| Char: 66 f
+                7970       idle    running| Char: 66 f
+                7990    running    running| Char: 66 f
+                8230    running  completed| Char: 66 f
+                8250  completed       idle| Char: 66 f
+                8270       idle       idle| Char: 15 
+                8410       idle    running| Char: 15 
+                8430    running    running| Char: 15 
+                8670    running  completed| Char: 15 
+                8690  completed       idle| Char: 15 
+                8710       idle       idle| Char: 42 B
+                8790       idle    running| Char: 42 B
+                8810    running    running| Char: 42 B
+                9050    running  completed| Char: 42 B
+                9070  completed       idle| Char: 42 B
+                9090       idle       idle| Char: 69 i
+                9270       idle    running| Char: 69 i
+                9290    running    running| Char: 69 i
+                9530    running  completed| Char: 69 i
+                9550  completed       idle| Char: 69 i
+                9570       idle       idle| Char: 6c l
+                9690       idle    running| Char: 6c l
+                9710    running    running| Char: 6c l
+                9950    running  completed| Char: 6c l
+                9970  completed       idle| Char: 6c l
+                9990       idle       idle| Char: 6c l
+               10030       idle    running| Char: 6c l
+               10050    running    running| Char: 6c l
+               10290    running  completed| Char: 6c l
+               10310  completed       idle| Char: 6c l
+               10330       idle       idle| Char: 20
+               10470       idle    running| Char: 20
+               10490    running    running| Char: 20
+               10730    running  completed| Char: 20
+               10750  completed       idle| Char: 20
+               10770       idle       idle| Char: 15 
+               10890       idle    running| Char: 15 
+               10910    running    running| Char: 15 
+               11150    running  completed| Char: 15 
+               11170  completed       idle| Char: 15 
+               11190       idle       idle| Char: 61 a
+               11330       idle    running| Char: 61 a
+               11350    running    running| Char: 61 a
+               11590    running  completed| Char: 61 a
+               11610  completed       idle| Char: 61 a
+               11630       idle       idle| Char: 63 c
+               11810       idle    running| Char: 63 c
+               11830    running    running| Char: 63 c
+               12070    running  completed| Char: 63 c
+               12090  completed       idle| Char: 63 c
+               12110       idle       idle| Char: 65 e
+               12230       idle    running| Char: 65 e
+               12250    running    running| Char: 65 e
+               12490    running  completed| Char: 65 e
+               12510  completed       idle| Char: 65 e
+               12530       idle       idle| Char: 20
+               12550       idle    running| Char: 20
+               12570    running    running| Char: 20
+               12810    running  completed| Char: 20
+               12830  completed       idle| Char: 20
+               12850       idle       idle| Char: 63 c
+               12990       idle    running| Char: 63 c
+               13010    running    running| Char: 63 c
+               13250    running  completed| Char: 63 c
+               13270  completed       idle| Char: 63 c
+               13290       idle       idle| Char: 68 h
+               13370       idle    running| Char: 68 h
+               13390    running    running| Char: 68 h
+               13630    running  completed| Char: 68 h
+               13650  completed       idle| Char: 68 h
+               13670       idle       idle| Char: 61 a
+               13710       idle    running| Char: 61 a
+               13730    running    running| Char: 61 a
+               13970    running  completed| Char: 61 a
+               13990  completed       idle| Char: 61 a
+               14010       idle       idle| Char: 73 s
+               14130       idle    running| Char: 73 s
+               14150    running    running| Char: 73 s
+               14390    running  completed| Char: 73 s
+               14410  completed       idle| Char: 73 s
+               14430       idle       idle| Char: 69 i
+               14550       idle    running| Char: 69 i
+               14570    running    running| Char: 69 i
+               14810    running  completed| Char: 69 i
+               14830  completed       idle| Char: 69 i
+               14850       idle       idle| Char: 6e n
+               14930       idle    running| Char: 6e n
+               14950    running    running| Char: 6e n
+               15190    running  completed| Char: 6e n
+               15210  completed       idle| Char: 6e n
+               15230       idle       idle| Char: 67 g
+               15430       idle    running| Char: 67 g
+               15450    running    running| Char: 67 g
+               15690    running  completed| Char: 67 g
+               15710  completed       idle| Char: 67 g
+               15730       idle       idle| Char: 20
+               15750       idle    running| Char: 20
+               15770    running    running| Char: 20
+               16010    running  completed| Char: 20
+               16030  completed       idle| Char: 20
+               16050       idle       idle| Char: 6d m
+               16110       idle    running| Char: 6d m
+               16130    running    running| Char: 6d m
+               16370    running  completed| Char: 6d m
+               16390  completed       idle| Char: 6d m
+               16410       idle       idle| Char: 65 e
+               16430       idle    running| Char: 65 e
+               16450    running    running| Char: 65 e
+               16690    running  completed| Char: 65 e
+               16710  completed       idle| Char: 65 e
+               16730       idle       idle| Char: 20
+               16870       idle    running| Char: 20
+               16890    running    running| Char: 20
+               17130    running  completed| Char: 20
+               17150  completed       idle| Char: 20
+               17170       idle       idle| Char: 74 t
+               17270       idle    running| Char: 74 t
+               17290    running    running| Char: 74 t
+               17530    running  completed| Char: 74 t
+               17550  completed       idle| Char: 74 t
+               17570       idle       idle| Char: 68 h
+               17650       idle    running| Char: 68 h
+               17670    running    running| Char: 68 h
+               17910    running  completed| Char: 68 h
+               17930  completed       idle| Char: 68 h
+               17950       idle       idle| Char: 72 r
+               18090       idle    running| Char: 72 r
+               18110    running    running| Char: 72 r
+               18350    running  completed| Char: 72 r
+               18370  completed       idle| Char: 72 r
+               18390       idle       idle| Char: 6f o
+               18530       idle    running| Char: 6f o
+               18550    running    running| Char: 6f o
+               18790    running  completed| Char: 6f o
+               18810  completed       idle| Char: 6f o
+               18830       idle       idle| Char: 75 u
+               19030       idle    running| Char: 75 u
+               19050    running    running| Char: 75 u
+               19290    running  completed| Char: 75 u
+               19310  completed       idle| Char: 75 u
+               19330       idle       idle| Char: 67 g
+               19490       idle    running| Char: 67 g
+               19510    running    running| Char: 67 g
+               19750    running  completed| Char: 67 g
+               19770  completed       idle| Char: 67 g
+               19790       idle       idle| Char: 68 h
+               19910       idle    running| Char: 68 h
+               19930    running    running| Char: 68 h
+               20170    running  completed| Char: 68 h
+               20190  completed       idle| Char: 68 h
+               20210       idle       idle| Char: 20
+               20310       idle    running| Char: 20
+               20330    running    running| Char: 20
+               20570    running  completed| Char: 20
+               20590  completed       idle| Char: 20
+               20610       idle       idle| Char: 61 a
+               20710       idle    running| Char: 61 a
+               20730    running    running| Char: 61 a
+               20970    running  completed| Char: 61 a
+               20990  completed       idle| Char: 61 a
+               21010       idle       idle| Char: 20
+               21190       idle    running| Char: 20
+               21210    running    running| Char: 20
+               21450    running  completed| Char: 20
+               21470  completed       idle| Char: 20
+               21490       idle       idle| Char: 64 d
+               21690       idle    running| Char: 64 d
+               21710    running    running| Char: 64 d
+               21950    running  completed| Char: 64 d
+               21970  completed       idle| Char: 64 d
+               21990       idle       idle| Char: 61 a
+               22110       idle    running| Char: 61 a
+               22130    running    running| Char: 61 a
+               22370    running  completed| Char: 61 a
+               22390  completed       idle| Char: 61 a
+               22410       idle       idle| Char: 74 t
+               22590       idle    running| Char: 74 t
+               22610    running    running| Char: 74 t
+               22850    running  completed| Char: 74 t
+               22870  completed       idle| Char: 74 t
+               22890       idle       idle| Char: 61 a
+               22990       idle    running| Char: 61 a
+               23010    running    running| Char: 61 a
+               23250    running  completed| Char: 61 a
+               23270  completed       idle| Char: 61 a
+               23290       idle       idle| Char: 70 p
+               23490       idle    running| Char: 70 p
+               23510    running    running| Char: 70 p
+               23750    running  completed| Char: 70 p
+               23770  completed       idle| Char: 70 p
+               23790       idle       idle| Char: 61 a
+               23990       idle    running| Char: 61 a
+               24010    running    running| Char: 61 a
+               24250    running  completed| Char: 61 a
+               24270  completed       idle| Char: 61 a
+               24290       idle       idle| Char: 74 t
+               24410       idle    running| Char: 74 t
+               24430    running    running| Char: 74 t
+               24670    running  completed| Char: 74 t
+               24690  completed       idle| Char: 74 t
+               24710       idle       idle| Char: 68 h
+               24930       idle      error| Char: 68 h
+               24950      error       idle| Char: 68 h
+               24970       idle       idle| Char: 68 h
+               25190       idle      error| Char: 68 h
+               25210      error       idle| Char: 68 h
+               25230       idle       idle| Char: 68 h
+               25450       idle      error| Char: 68 h
+               25470      error       idle| Char: 68 h
+               25490       idle       idle| Char: 68 h
+               25710       idle      error| Char: 68 h
+               25730      error       idle| Char: 68 h
+               25750       idle       idle| Char: 68 h
+               25970       idle      error| Char: 68 h
+               25990      error       idle| Char: 68 h
+               26010       idle       idle| Char: 68 h
+               26230       idle      error| Char: 68 h
+               26250      error       idle| Char: 68 h
+               26270       idle       idle| Char: 68 h
+               26490       idle      error| Char: 68 h
+               26510      error       idle| Char: 68 h
+               26530       idle       idle| Char: 68 h
+               26750       idle      error| Char: 68 h
+               26770      error       idle| Char: 68 h
+               26790       idle       idle| Char: 68 h
+               27010       idle      error| Char: 68 h
+               27030      error       idle| Char: 68 h
+               27050       idle       idle| Char: 68 h
+               27270       idle      error| Char: 68 h
+               27290      error       idle| Char: 68 h
+               27310       idle       idle| Char: 68 h
+$finish called from file "01_tb.sv", line 1402.
+$finish at simulation time                27471
+           V C S   S i m u l a t i o n   R e p o r t
+Time: 27471
+CPU Time:      0.200 seconds;       Data structure size:   0.0Mb
+Tue Mar 28 21:36:18 202:q
+

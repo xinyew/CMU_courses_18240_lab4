@@ -18,16 +18,18 @@ module testbench();
   initial begin
     clock = 1'b0;
     reset = 1'b1;
-    forever #159 clock = ~clock;
+    forever #3975 clock = ~clock;
+    // forever #3816 clock = ~clock;
+    // forever #4134 clock = ~clock;
   end
 
   initial begin
     CLOCK_50 = 1'b0;
-    forever #4 CLOCK_50 = ~CLOCK_50;
+    forever #1 CLOCK_50 = ~CLOCK_50;
   end
 
   initial begin
-    $monitor($time,, "%10s %10s  Char: %x String: %s", R.control.state.name, R.control.n_state.name, R.m1.Y ,byteOut);
+    $monitor($time,, "%10s %10s SR: %b Char: %x %b %b %b String: %s", R.control.state.name, R.control.n_state.name,R.reg1.Q, R.m1.Y, R.is2bitErr, R.fs_error, R.fe_error,byteOut);
     //$monitor($time,, "Char: %c", byteOut);
     @(posedge clock);
     reset <= 0;

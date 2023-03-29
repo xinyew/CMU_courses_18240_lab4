@@ -1,5 +1,5 @@
-/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/SECDED.sv
-/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/Sender.sv
-/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/library.sv
-/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/receiver.sv
-/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/tb.sv
+/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/00_SECDED.sv
+/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/00_library.sv
+/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/01_sender.sv
+/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02.sv
+/afs/andrew.cmu.edu/usr24/xinyew/public/lab4/02_tb.sv

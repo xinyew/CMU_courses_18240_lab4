@@ -91,7 +91,7 @@ module task2
 
     // choose from corrected char or error code
     Mux2to1 m1 (.I0({corrected[12], corrected[11], corrected[10], corrected[9], corrected[7], corrected[6], corrected[5], corrected[3]}),
-                .I1(8'h15), .S(is2bitErr | fs_error | fe_error), .Y(mux_out));
+                .I1(8'h15), .S(is2bitErr | fs_error), .Y(mux_out));
 
     // reg to store the result
     LeftShift8Register reg2 (.en(R_en), .clock(clock),
@@ -126,7 +126,7 @@ module fsm
                     n_state = ERROR;
                 else if(serialIn)
                     n_state = SYNC;
-                else if(~serialIn)
+                else
                     n_state = IDLE;
 
                 // Do not shift
@@ -188,7 +188,7 @@ module fsm
                 // Increase num of bit collected by 1
                 C_en = 1;
                 C_clear = 0;
-                if (blockReceived)
+                if (blockReceived) 
                   n_state = COMPLETED;
                 // keep clearning frame error counter
                 E_en = 0;
@@ -263,13 +263,23 @@ module fsm
             end
 
             COMPLETED : begin
-                if (is2bitErr || serialIn) begin
+                if (~timeNextBit) begin
+                  n_state = COMPLETED;
+						fe_error = 0;
+                  R_en = 0;
+                  Char_en = 0;
+                end
+                else if (is2bitErr || serialIn) begin
                   n_state = ERROR;
                   fe_error = 1;
+                  R_en = 1;
+                  Char_en = 1;
                 end
                 else begin
                   n_state = IDLE;
                   fe_error = 0;
+                  R_en = 1;
+                  Char_en = 1;
                 end
                 // Stop shifting
                 S_en = 0;
@@ -283,16 +293,14 @@ module fsm
                 A_en = 0;
                 A_clear = 1;
                 // Stop counting next sampling timing without syncing, clear
-                W_en = 0;
-                W_clear = 1;
+                W_en = 1;
+                W_clear = 0;
                 // increase char count, and do not clear it
-                Char_en = 1;
                 // enable register
-                R_en = 1;
             end
 
             ERROR : begin
-                fe_error = 1;
+                fe_error = 0;
                 n_state = IDLE;
                 // Stop shifting
                 S_en = 0;

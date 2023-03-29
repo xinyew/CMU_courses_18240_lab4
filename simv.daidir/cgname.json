@@ -27,7 +27,7 @@
         "Register",
         "kynWL",
         "module",
-        6
+        7
     ],
     "Synchronizer": [
         "Synchronizer",
@@ -51,7 +51,7 @@
         "testbench",
         "iAVhC",
         "module",
-        11
+        5
     ],
     "...MASTER...": [
         "SIM",

@@ -1,5 +1,5 @@
                          Chronologic VCS (TM)
-         Version T-2022.06_Full64 -- Tue Mar 28 21:29:18 2023
+         Version T-2022.06_Full64 -- Tue Mar 28 21:34:16 2023
 
                     Copyright (c) 1991 - 2022 Synopsys, Inc.
    This software and the associated documentation are proprietary to Synopsys,
@@ -123,14 +123,6 @@ chipInterface.sv, 29
   The expression is from module chipInterface
 
 
-Error-[VIPCBD] Variable input ports cannot be driven
-chipInterface.sv, 15
-  Variable input ports cannot be driven.
-  The input variable port "reset" of module "chipInterface" cannot be driven.
-  Source info: assign reset = (~KEY[2]);
-  Module 'chipInterface' is defined at "chipInterface.sv", 2
-
-
 Lint-[WMIA-L] Width mismatch in assignment
 chipInterface.sv, 77
   Width mismatch between LHS and RHS is found in assignment:
@@ -193,12 +185,6 @@ chipInterface.sv, 98
   The following 32-bit wide expression is assigned to a 1-bit LHS target:
   Source info: c_clr = 1;
   Expression: c_clr
-
-
-Error-[IRIPS] Illegal range in part select
-chipInterface.sv, 110
-  The range of the part select is illegal:
-  Unknown range in part select.m[(curr_add + 8):curr_add]
 
 
 Lint-[ONGS] Output never gets set
@@ -994,6 +980,20 @@ Lint-[WMIA-L] Width mismatch in assignment
   Source info: is2BitErr = 0;
   Expression: is2BitErr
 
-2 warnings
-2 errors
-CPU time: .315 seconds to compile
+Starting vcs inline pass...
+
+8 modules and 0 UDP read.
+recompiling module chipInterface
+recompiling module MagComp
+recompiling module Multiplexer
+recompiling module Decoder
+recompiling module Register
+recompiling module Synchronizer
+recompiling module ShiftRegister_PIPO
+recompiling module BarrelShiftRegister
+All of 8 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib -L/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib  -Wl,-rpath-link=./   objs/amcQw_d.o   _5818_archive_1.so _prev_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .485 seconds to compile + .587 seconds to elab + .268 seconds to link
