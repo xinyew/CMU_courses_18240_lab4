@@ -1,15 +1,16 @@
+`default_nettype none
 module chipInterface(
-    input logic serialIn, CLOCK_50, click,
+    input logic CLOCK_50,
     input logic reset, UART_RXD,
     input logic[3:0] KEY,
-    output logic [6:0] HEX7, HEX6;
+    output logic [6:0] HEX7, HEX6
 );
     // here we declare the output
     logic [511:0] m; // this should be connected to out
-    logic [9:0] curr_add; // this will be our connection to out
+    logic [8:0] curr_add; // this will be our connection to out
     // here we declare counter vars
     logic c_clr, c_en, isNew;
-
+    logic click;
     // Assigning the FPGA inputs
     assign reset = ~KEY[2];
     assign click = ~KEY[3];
@@ -22,16 +23,16 @@ module chipInterface(
               .isNew(isNew));
 
     // fsm to deal with shift reg
-    fsm control(.*);
+    interface_fsm control(.*);
 
     // here we declare the counter
     Counter_8 dut1(.en(c_en), .clear(c_clr), .clock(CLOCK_50), .up(1), .Q(curr_add));
 
 endmodule : chipInterface
 
-module fsm(
-    input logic clock, reset, click,
-    input logic [9:0] curr_add,
+module interface_fsm(
+    input logic CLOCK_50, reset, click,
+    input logic [8:0] curr_add,
     input logic [511:0] m,
     output logic c_en, c_clr,
     output logic [6:0] HEX6, HEX7
@@ -57,7 +58,7 @@ module fsm(
     end
     
     // here we are defining reset and state transitions
-    always_ff @(posedge clock) begin 
+    always_ff @(posedge CLOCK_50) begin 
         if(reset)
             state = start;
         else
@@ -65,6 +66,7 @@ module fsm(
     end
 
     // here we come to the state generation
+    always_comb begin
     case(state) 
         // here in the start state we wait for click
         start : begin 
@@ -96,15 +98,16 @@ module fsm(
             c_clr = 1;
         end 
     endcase
-
+    end
     // here we come up with output generation
+    always_comb begin
     unique case(state) 
         start : begin 
             HEX6 = 7'b1111111;
             HEX7 = 7'b1111111;
         end
         view: begin 
-            case(m[c_out+8:c_out])
+            case(m[curr_add+8:curr_add])
                 8'd97, 8'd65 : begin 
                     HEX7 = s6;
                     HEX6 = s5;
@@ -209,6 +212,7 @@ module fsm(
                     HEX7 = s9;
                     HEX6 = s0;
                 end
+                default : {HEX7, HEX6} = {s2, s1}; 
             endcase
         end
         next_8: begin 
@@ -216,10 +220,11 @@ module fsm(
             HEX7 = 7'b1111111;
         end
     endcase
-endmodule : fsm
+    end
+endmodule : interface_fsm
 
 module Counter_8
-  #(parameter WIDTH=10)
+  #(parameter WIDTH=9)
   (input  logic [WIDTH-1:0] D,
    input  logic             en, clear, load, clock, up,
    output logic [WIDTH-1:0] Q);
@@ -235,4 +240,4 @@ module Counter_8
       else
         Q <= Q - 3'd8;
 
-endmodule : Counter
+endmodule : Counter_8

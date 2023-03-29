@@ -1,0 +1,999 @@
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Tue Mar 28 21:29:18 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'chipInterface.sv'
+
+Warning-[DCTTSW] Decimal constant truncated
+  Constant '8' is truncated to 3 bits: 0.
+  "chipInterface.sv", 239
+  Source info:         Q <= Q + 3'd8;
+
+
+Warning-[DCTTSW] Decimal constant truncated
+  Constant '8' is truncated to 3 bits: 0.
+  "chipInterface.sv", 241
+  Source info:         Q <= Q - 3'd8;
+
+Parsing design file '02.sv'
+Parsing design file '00_library.sv'
+Parsing design file '00_SECDED.sv'
+Top Level Modules:
+       chipInterface
+       MagComp
+       Multiplexer
+       Decoder
+       Register
+       Synchronizer
+       ShiftRegister_PIPO
+       BarrelShiftRegister
+No TimeScale specified
+
+Lint-[TFIPC-L] Too few instance port connections
+02.sv, 55
+task2, "SECDEDdecoder dec1( .inCode (uncorrected),  .is2BitErr (is2bitErr),  .outCode (corrected));"
+  The above instance has fewer port connections than the module definition,
+  There are 5 port(s) in module "SECDEDdecoder" definition, but only 3 port 
+  connect(s) in the instance.
+  output port 'syndrome' is not connected,
+  output port 'is1BitErr' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+02.sv, 58
+task2, "Counter #(32) counter1( .en (C_en),  .clear (C_clear),  .up (1),  .clock (clock),  .Q (C_count));"
+  The above instance has fewer port connections than the module definition,
+  There are 7 port(s) in module "Counter" definition, but only 5 port 
+  connect(s) in the instance.
+  input port 'D' is not connected,
+  input port 'load' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+02.sv, 62
+task2, "Counter #(32) counter2( .en (E_en),  .clear (E_clear),  .up (1),  .clock (clock),  .Q (E_count));"
+  The above instance has fewer port connections than the module definition,
+  There are 7 port(s) in module "Counter" definition, but only 5 port 
+  connect(s) in the instance.
+  input port 'D' is not connected,
+  input port 'load' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+02.sv, 66
+task2, "Counter #(32) counter3( .en (A_en),  .clear (A_clear),  .up (1),  .clock (clock),  .Q (A_count));"
+  The above instance has fewer port connections than the module definition,
+  There are 7 port(s) in module "Counter" definition, but only 5 port 
+  connect(s) in the instance.
+  input port 'D' is not connected,
+  input port 'load' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+02.sv, 70
+task2, "Counter #(32) counter4( .en (W_en),  .clear (W_clear),  .up (1),  .clock (clock),  .Q (W_count));"
+  The above instance has fewer port connections than the module definition,
+  There are 7 port(s) in module "Counter" definition, but only 5 port 
+  connect(s) in the instance.
+  input port 'D' is not connected,
+  input port 'load' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+02.sv, 74
+task2, "Counter #(32) counter5( .en (Char_en),  .clear (Char_clear),  .up (1),  .clock (clock),  .Q (Char_count));"
+  The above instance has fewer port connections than the module definition,
+  There are 7 port(s) in module "Counter" definition, but only 5 port 
+  connect(s) in the instance.
+  input port 'D' is not connected,
+  input port 'load' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+chipInterface.sv, 29
+chipInterface, "Counter_8 dut1( .en (c_en),  .clear (c_clr),  .clock (CLOCK_50),  .up (1),  .Q (curr_add));"
+  The above instance has fewer port connections than the module definition,
+  There are 7 port(s) in module "Counter_8" definition, but only 5 port 
+  connect(s) in the instance.
+  input port 'D' is not connected,
+  input port 'load' is not connected.
+
+
+Lint-[PCWM-L] Port connection width mismatch
+chipInterface.sv, 29
+"Counter_8 dut1( .en (c_en),  .clear (c_clr),  .clock (CLOCK_50),  .up (1),  .Q (curr_add));"
+  The following 32-bit expression is connected to 1-bit port "up" of module 
+  "Counter_8", instance "dut1".
+  Expression: 1
+  The expression is from module chipInterface
+
+
+Error-[VIPCBD] Variable input ports cannot be driven
+chipInterface.sv, 15
+  Variable input ports cannot be driven.
+  The input variable port "reset" of module "chipInterface" cannot be driven.
+  Source info: assign reset = (~KEY[2]);
+  Module 'chipInterface' is defined at "chipInterface.sv", 2
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+chipInterface.sv, 77
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: c_en = 0;
+  Expression: c_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+chipInterface.sv, 78
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: c_clr = 0;
+  Expression: c_clr
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+chipInterface.sv, 86
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: c_en = 0;
+  Expression: c_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+chipInterface.sv, 87
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: c_clr = 0;
+  Expression: c_clr
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+chipInterface.sv, 92
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: c_en = 1;
+  Expression: c_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+chipInterface.sv, 93
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: c_clr = 0;
+  Expression: c_clr
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+chipInterface.sv, 97
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: c_en = 0;
+  Expression: c_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+chipInterface.sv, 98
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: c_clr = 1;
+  Expression: c_clr
+
+
+Error-[IRIPS] Illegal range in part select
+chipInterface.sv, 110
+  The range of the part select is illegal:
+  Unknown range in part select.m[(curr_add + 8):curr_add]
+
+
+Lint-[ONGS] Output never gets set
+02.sv, 6
+"isNew"
+  Output port 'isNew' has never been assigned to any value.
+  
+
+
+Lint-[PCWM-L] Port connection width mismatch
+02.sv, 51
+"ShiftRegister_SIPO #(13) reg1( .serial (serialIn),  .en (S_en),  .left (1),  .clock (clock),  .Q (uncorrected));"
+  The following 32-bit expression is connected to 1-bit port "left" of module 
+  "ShiftRegister_SIPO", instance "reg1".
+  Expression: 1
+  The expression is from module task2, instance R 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+02.sv, 58
+"Counter #(32) counter1( .en (C_en),  .clear (C_clear),  .up (1),  .clock (clock),  .Q (C_count));"
+  The following 32-bit expression is connected to 1-bit port "up" of module 
+  "Counter", instance "counter1".
+  Expression: 1
+  The expression is from module task2, instance R 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+02.sv, 62
+"Counter #(32) counter2( .en (E_en),  .clear (E_clear),  .up (1),  .clock (clock),  .Q (E_count));"
+  The following 32-bit expression is connected to 1-bit port "up" of module 
+  "Counter", instance "counter2".
+  Expression: 1
+  The expression is from module task2, instance R 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+02.sv, 66
+"Counter #(32) counter3( .en (A_en),  .clear (A_clear),  .up (1),  .clock (clock),  .Q (A_count));"
+  The following 32-bit expression is connected to 1-bit port "up" of module 
+  "Counter", instance "counter3".
+  Expression: 1
+  The expression is from module task2, instance R 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+02.sv, 70
+"Counter #(32) counter4( .en (W_en),  .clear (W_clear),  .up (1),  .clock (clock),  .Q (W_count));"
+  The following 32-bit expression is connected to 1-bit port "up" of module 
+  "Counter", instance "counter4".
+  Expression: 1
+  The expression is from module task2, instance R 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+02.sv, 74
+"Counter #(32) counter5( .en (Char_en),  .clear (Char_clear),  .up (1),  .clock (clock),  .Q (Char_count));"
+  The following 32-bit expression is connected to 1-bit port "up" of module 
+  "Counter", instance "counter5".
+  Expression: 1
+  The expression is from module task2, instance R 
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 113
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_clear <= 1;
+  Expression: Char_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 117
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_clear <= 0;
+  Expression: Char_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 124
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: fe_error = 0;
+  Expression: fe_error
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 133
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: S_en = 0;
+  Expression: S_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 135
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_en = 0;
+  Expression: C_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 136
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_clear = 1;
+  Expression: C_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 138
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_en = 1;
+  Expression: E_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 139
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_clear = 0;
+  Expression: E_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 141
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_en = 0;
+  Expression: A_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 142
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_clear = 1;
+  Expression: A_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 145
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_en = 0;
+  Expression: W_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 146
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_clear = 1;
+  Expression: W_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 148
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_en = 0;
+  Expression: Char_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 150
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: R_en = 0;
+  Expression: R_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 154
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: fe_error = 0;
+  Expression: fe_error
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 160
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: S_en = 0;
+  Expression: S_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 162
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_en = 0;
+  Expression: C_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 163
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_clear = 0;
+  Expression: C_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 165
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_en = 0;
+  Expression: E_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 166
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_clear = 1;
+  Expression: E_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 168
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_en = 1;
+  Expression: A_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 169
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_clear = 0;
+  Expression: A_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 172
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_en = 0;
+  Expression: W_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 173
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_clear = 1;
+  Expression: W_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 175
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_en = 0;
+  Expression: Char_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 177
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: R_en = 0;
+  Expression: R_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 181
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: fe_error = 0;
+  Expression: fe_error
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 187
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: S_en = 1;
+  Expression: S_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 189
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_en = 1;
+  Expression: C_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 190
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_clear = 0;
+  Expression: C_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 194
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_en = 0;
+  Expression: E_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 195
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_clear = 1;
+  Expression: E_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 197
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_en = 0;
+  Expression: A_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 198
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_clear = 1;
+  Expression: A_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 201
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_en = 0;
+  Expression: W_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 202
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_clear = 1;
+  Expression: W_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 204
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_en = 0;
+  Expression: Char_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 206
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: R_en = 0;
+  Expression: R_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 210
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: fe_error = 0;
+  Expression: fe_error
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 218
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: S_en = 0;
+  Expression: S_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 220
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_en = 0;
+  Expression: C_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 221
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_clear = 0;
+  Expression: C_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 223
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_en = 0;
+  Expression: E_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 224
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_clear = 1;
+  Expression: E_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 226
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_en = 0;
+  Expression: A_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 227
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_clear = 1;
+  Expression: A_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 229
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_en = 1;
+  Expression: W_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 230
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_clear = 0;
+  Expression: W_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 232
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_en = 0;
+  Expression: Char_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 234
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: R_en = 0;
+  Expression: R_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 238
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: fe_error = 0;
+  Expression: fe_error
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 246
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: S_en = 0;
+  Expression: S_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 248
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_en = 0;
+  Expression: C_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 249
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_clear = 0;
+  Expression: C_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 251
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_en = 0;
+  Expression: E_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 252
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_clear = 1;
+  Expression: E_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 254
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_en = 0;
+  Expression: A_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 255
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_clear = 1;
+  Expression: A_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 257
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_en = 1;
+  Expression: W_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 258
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_clear = 0;
+  Expression: W_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 260
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_en = 0;
+  Expression: Char_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 262
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: R_en = 0;
+  Expression: R_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 268
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: fe_error = 1;
+  Expression: fe_error
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 272
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: fe_error = 0;
+  Expression: fe_error
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 275
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: S_en = 0;
+  Expression: S_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 277
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_en = 0;
+  Expression: C_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 278
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_clear = 1;
+  Expression: C_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 280
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_en = 0;
+  Expression: E_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 281
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_clear = 1;
+  Expression: E_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 283
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_en = 0;
+  Expression: A_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 284
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_clear = 1;
+  Expression: A_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 286
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_en = 0;
+  Expression: W_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 287
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_clear = 1;
+  Expression: W_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 289
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_en = 1;
+  Expression: Char_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 291
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: R_en = 1;
+  Expression: R_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 295
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: fe_error = 1;
+  Expression: fe_error
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 298
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: S_en = 0;
+  Expression: S_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 300
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_en = 0;
+  Expression: C_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 301
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: C_clear = 1;
+  Expression: C_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 303
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_en = 0;
+  Expression: E_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 304
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: E_clear = 1;
+  Expression: E_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 306
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_en = 0;
+  Expression: A_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 307
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: A_clear = 1;
+  Expression: A_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 309
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_en = 0;
+  Expression: W_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 310
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: W_clear = 1;
+  Expression: W_clear
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 312
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: Char_en = 0;
+  Expression: Char_en
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+02.sv, 314
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: R_en = 0;
+  Expression: R_en
+
+
+Lint-[UI] Unused input
+00_SECDED.sv, 46
+  Following is an unused input.
+  Source info: syndrome
+
+
+Lint-[CAWM-L] Width mismatch
+00_SECDED.sv, 53
+  Continuous assignment width mismatch
+  1 bits (lhs) versus 32 bits (rhs).
+  Source info: assign is1BitErr = (globalParity ? 1 : 0);  
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+00_SECDED.sv, 66
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: is2BitErr = 0;
+  Expression: is2BitErr
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+00_SECDED.sv, 69
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: is2BitErr = 1;
+  Expression: is2BitErr
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+00_SECDED.sv, 72
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 1-bit LHS target:
+  Source info: is2BitErr = 0;
+  Expression: is2BitErr
+
+2 warnings
+2 errors
+CPU time: .315 seconds to compile
