@@ -5,6 +5,18 @@
         "module",
         1
     ],
+    "chipInterface": [
+        "chipInterface",
+        "Cr8np",
+        "module",
+        11
+    ],
+    "SevenSegmentDisplay": [
+        "SevenSegmentDisplay",
+        "eIk01",
+        "module",
+        6
+    ],
     "MagComp": [
         "MagComp",
         "vaLRj",
@@ -46,12 +58,6 @@
         "ts568",
         "module",
         10
-    ],
-    "testbench": [
-        "testbench",
-        "iAVhC",
-        "module",
-        5
     ],
     "...MASTER...": [
         "SIM",

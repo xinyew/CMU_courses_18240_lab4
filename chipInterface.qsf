@@ -43,10 +43,6 @@ set_global_assignment -name TOP_LEVEL_ENTITY chipInterface
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:27:48  MARCH 28, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "16.1.2 Standard Edition"
-set_global_assignment -name SYSTEMVERILOG_FILE 02.sv
-set_global_assignment -name SYSTEMVERILOG_FILE 00_SECDED.sv
-set_global_assignment -name SYSTEMVERILOG_FILE 00_library.sv
-set_global_assignment -name SYSTEMVERILOG_FILE chipInterface.sv
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -293,4 +289,10 @@ set_instance_assignment -name FAST_INPUT_REGISTER ON -to *
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to *
 set_instance_assignment -name TSU_REQUIREMENT "10 ns" -from * -to *
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE 02_chipInterface.sv
+set_global_assignment -name SYSTEMVERILOG_FILE 02.sv
+set_global_assignment -name SYSTEMVERILOG_FILE 00_SECDED.sv
+set_global_assignment -name SYSTEMVERILOG_FILE 00_library.sv
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
